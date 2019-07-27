@@ -454,7 +454,10 @@ a.nav_link.active {
     border: 1px solid #e5e5e5;
     margin-bottom: 10px;
 }
-.akordion_item.active .akordion_content {
+#akordion_1 {
+    display: block;
+}
+.akordion_item.active {
     display: block;
 }
 .akordion_item.active .akordion_header:after {
@@ -568,12 +571,10 @@ a.nav_link.active {
     right: 20px;
     z-index: 1;
 }
-.reviews_button--prev,
 .slick-prev {
     left: 0;
     transform: rotate(-45deg);
 }
-.reviews_button--next,
 .slick-next {
     right: 0;
     transform: rotate(135deg);

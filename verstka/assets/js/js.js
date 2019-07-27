@@ -21,6 +21,22 @@ $(function() {
     }
 
 
+    /*ACTIVE NAV WHILE SCROLLING*/
+    jQuery(window).scroll(function(){
+        var $sections = $('section');
+        $sections.each(function(i,el){
+            var top  = $(el).offset().top-100;
+            var bottom = top +$(el).height();
+            var scroll = $(window).scrollTop();
+            var id = $(el).attr('id');
+            console.log(id);
+            if( scroll > top && scroll < bottom){
+                $('a.active').removeClass('active');
+                $('a[data-scroll="#'+id+'"]').addClass('active');
+            }
+        })
+    });
+
     /*SMOOTH SCROLL*/
     $("[data-scroll]").on("click",function (event) {
         event.preventDefault();
@@ -50,12 +66,13 @@ $(function() {
         $("#nav,a").removeClass("active");
     });
 
-
     /*AKORDION*/
     $("[data-collapse]").on("click", function (event) {
        event.preventDefault();
+       $(".akordion_content").not($(this).next()).slideUp();
        var sectionId = $(this).data('collapse');
        $(sectionId).slideToggle();
+       $("[data-collapse]").removeClass("active");
        $(this).toggleClass("active");
     });
 
