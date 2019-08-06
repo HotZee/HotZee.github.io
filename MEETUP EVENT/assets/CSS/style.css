@@ -514,6 +514,12 @@ table {
     margin: 0 auto;
     padding: 60px 0;
 }
+.map-form textarea{
+    font-family: 'Roboto', sans-serif;
+    color: #6c6c6c;
+    font-size: 19px;
+    font-weight: 300;
+}
 .map-input {
     width: 100%;
     box-sizing: border-box;
