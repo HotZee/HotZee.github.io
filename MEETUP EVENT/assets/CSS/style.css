@@ -205,6 +205,11 @@ body {
     border-color: #90d23d;
     border-radius: 5px;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .welcome-form_input::placeholder {
     font-size: 19px;
     font-weight: 300;
