@@ -13,7 +13,7 @@ body {
 ::-webkit-scrollbar-button {  background-color: #d67576; }
 ::-webkit-scrollbar-track {  background-color: #999;}
 ::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #d67577; border-radius: 3px;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #d67577;}
 ::-webkit-scrollbar-corner { background-color: #999;}
 ::-webkit-resizer { background-color: #d67d7f;}
 h1,h2,h3,h4,h5,h6 {
