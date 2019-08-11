@@ -23,13 +23,16 @@
                     </div>
                 </a>
             </div>
-            <div class="nav">
+            <div class="nav" id="nav">
                 <a class="nav-link" href="#" data-scroll="#welcome">EVENT DETAILS</a>
                 <a class="nav-link" href="#" data-scroll="#speakers">SPEAKERS</a>
                 <a class="nav-link" href="#" data-scroll="#sponsors">SPONSORS</a>
                 <a class="nav-link" href="#" data-scroll="#event-photos">PAST EVENTS</a>
                 <a class="nav-link" href="#" data-scroll="#contact">CONTACT</a>
             </div>
+            <button class="nav_toggle" id="burger_menu" type="button">
+                <span class="nav_toggle-item">Menu</span>
+            </button>
         </div>
     </div>
 </header>
@@ -41,17 +44,17 @@
                 <span class="days countdown-time"></span>
                 <span class="countdown-text">Days</span>
             </div>
-            :
+            <span>:</span>
             <div class="countdown-number">
                 <span class="hours countdown-time"></span>
                 <span class="countdown-text">Hours</span>
             </div>
-            :
+            <span>:</span>
             <div class="countdown-number">
                 <span class="minutes countdown-time"></span>
                 <span class="countdown-text">Minutes</span>
             </div>
-            :
+            <span>:</span>
             <div class="countdown-number">
                 <span class="seconds countdown-time"></span>
                 <span class="countdown-text">Seconds</span>
@@ -79,7 +82,7 @@
     </div>
 </section>
 <!--INTRO-->
-<section class="section" id="welcome">
+<section class="section" id="welcome" style="position:relative;">
     <div class="container">
         <div class="welcome">
             <div class="welcome-title">Welcome!</div>
@@ -129,7 +132,7 @@
                 </div>
                 <div class="about-event_title">War Stories</div>
                 <div class="about-event_text">
-                    <p>Gather round fellow authors!Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.</p>
+                    <p>Gather round fellow authors! Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.</p>
                 </div>
             </div>
         </div>
@@ -439,7 +442,7 @@
                 <div class="info-text">
                     <p>Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia</p>
                 </div>
-                <div class="reward-button">
+                <div class="reward-button map-info--button">
                     <input class="reward-button_item" type="submit" value="View Map">
                 </div>
             </div>

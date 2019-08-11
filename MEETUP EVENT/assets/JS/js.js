@@ -1,3 +1,5 @@
+$(function () {
+
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
@@ -57,8 +59,10 @@ $(window).on("scroll",function () {
 function checkScroll(scrollOffset) {
     if (scrollOffset >= introH) {
         header.addClass("fixed");
+        $("#nav").addClass("test-class");
     } else {
         header.removeClass("fixed");
+        $("#nav").removeClass("test-class");
     }
 }
 
@@ -74,5 +78,33 @@ $("[data-scroll]").on("click",function (event) {
 
     $("html, body").animate({
         scrollTop: sectionOffset-40
+    });
+});
+
+    /*ACTIVE NAV WHILE SCROLLING*/
+    jQuery(window).scroll(function(){
+        var $sections = $('section');
+        $sections.each(function(i,el){
+            var top  = $(el).offset().top-100;
+            var bottom = top +$(el).height();
+            var scroll = $(window).scrollTop();
+            var id = $(el).attr('id');
+            if( scroll > top && scroll < bottom){
+                $('a.active').removeClass('active');
+                $('a[data-scroll="#'+id+'"]').addClass('active');
+            }
+        })
+    });
+    /*BURGER MENU*/
+    $("#burger_menu").on("click", function (event) {
+        event.preventDefault();
+        $("#nav").toggleClass("active");
+        $("#burger_menu").toggleClass("active");
+    });
+    $("#nav,a").on("click", function (event) {
+        event.preventDefault();
+        $("#burger_menu").removeClass("active");
+        $("#nav").removeClass("active");
+        $("#nav,a").removeClass("active");
     });
 });
