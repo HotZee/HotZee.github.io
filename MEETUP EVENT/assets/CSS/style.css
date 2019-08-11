@@ -810,6 +810,12 @@ footer {
         display: none;
     }
 }
+@media (max-width: 700px) {
+.welcome-form {
+    max-width: 360px;
+    left: 250px;
+    }
+}
 @media (max-width: 425px) {
     .oblique {
         clip-path: polygon(0 5%, 100% 0, 100% 80%, 0 85%);
