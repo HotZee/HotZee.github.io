@@ -624,6 +624,7 @@ table {
     height: 250px;
 }
 .map-input--button {
+    -webkit-appearance: none;
     border: 0;
     height: 60px;
     background-color: #373737;
@@ -631,6 +632,7 @@ table {
     color: #fff;
     width: 100%;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
     cursor: pointer;
 }
 
