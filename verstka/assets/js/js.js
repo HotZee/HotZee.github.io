@@ -29,7 +29,6 @@ $(function() {
             var bottom = top +$(el).height();
             var scroll = $(window).scrollTop();
             var id = $(el).attr('id');
-            console.log(id);
             if( scroll > top && scroll < bottom){
                 $('a.active').removeClass('active');
                 $('a[data-scroll="#'+id+'"]').addClass('active');
