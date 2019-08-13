@@ -194,7 +194,7 @@ body {
     margin: 200px auto 70px;
     text-align: center;
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 .countdown-number {
     width: 25%;
@@ -940,7 +940,7 @@ footer {
         top: -510px;
     }
     .welcome-form_input {
-        padding: 20px 0 20px 15px;
+        padding: 15px 0 15px 15px;
         margin-top: 10px;
         font-size: 15px;
     }
