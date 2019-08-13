@@ -442,6 +442,7 @@ table {
     font-size: 14px;
 }
 .reward-button_item {
+    -webkit-appearance: none;
     background-color: #90d23d;
     border: none;
     max-width: 200px;
