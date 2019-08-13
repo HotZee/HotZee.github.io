@@ -940,7 +940,8 @@ footer {
         top: -510px;
     }
     .welcome-form_input {
-        padding: 17px 0 17px 15px;
+        padding: 20px 0 20px 15px;
+        margin-top: 15px;
         font-size: 10px;
     }
     .welcome-form_button {
