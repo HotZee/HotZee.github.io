@@ -69,11 +69,18 @@ $(function() {
     /*AKORDION*/
     $("[data-collapse]").on("click", function (event) {
        event.preventDefault();
-       $(".akordion_content").not($(this).next()).slideUp();
-       var sectionId = $(this).data('collapse');
-       $(sectionId).slideToggle();
-       $("[data-collapse]").removeClass("active");
-       $(this).toggleClass("active");
+       if ($(this).hasClass('active')==true){
+           $(this).toggleClass("active");
+           var sectionId = $(this).data('collapse');
+           $(sectionId).slideUp();
+       }
+       else {
+           $(".akordion_content").not($(this).next()).slideUp();
+           var sectionId = $(this).data('collapse');
+           $(sectionId).slideToggle();
+           $("[data-collapse]").removeClass("active");
+           $(this).toggleClass("active");
+       }
     });
 
 
