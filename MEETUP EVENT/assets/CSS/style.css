@@ -504,8 +504,6 @@ table {
     position: absolute;
     bottom: 30px;
     font-size: 20px;
-    opacity: 0;
-    transition: opacity .2s linear;
 }
 .speaker-social_item {
     padding-right: 5px;
@@ -513,12 +511,14 @@ table {
     cursor: pointer;
 }
 .speakers-content {
-
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .2s linear;
 }
 .speakers-item:hover {
     background-color: #46c309;
 }
-.speakers-item:hover .speakers-social {
+.speakers-item:hover .speakers-content {
     opacity: 1;
 }
 
