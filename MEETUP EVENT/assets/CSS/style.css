@@ -475,6 +475,7 @@ table {
     padding: 30px;
     position: relative;
     margin-bottom: 72px;
+    z-index: 100;
     transition: background-color .2s linear;
 }
 .speaker-badge {
