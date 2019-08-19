@@ -512,6 +512,7 @@ table {
 }
 .speakers-content {
     opacity: 0;
+    z-index: -1;
     transition: opacity .2s linear;
 }
 .speakers-item:hover {
