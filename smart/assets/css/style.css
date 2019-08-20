@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 .title {
-    margin-top: 147px;
+    margin-top: 110px;
     text-align: center;
     margin-bottom: 115px;
 }
@@ -38,14 +38,14 @@ body {
     color: #494949;
     border: 3px solid #706b73;
     text-align: center;
-    margin-top: 82px;
+    margin-top: 20px;
     border-radius: 3px;
 }
 .logo span {
     color: #fa9179;
 }
 .menu {
-    margin-top: 90px;
+    margin-top: 37px;
 }
 .menu:hover {
     cursor: pointer;
@@ -59,7 +59,7 @@ body {
 }
 .header__intro {
     text-align: center;
-    margin-top: 145px;
+    margin-top: 160px;
 }
 .header__title {
     color: #6e6e6e;
@@ -171,35 +171,37 @@ body {
     width: 16px;
     height: 1px;
     background-color: #7f7f7f;
-    margin-left: 14.87%;
+    margin-left: 6.87%;
     position: absolute;
     margin-top: 10px;
     padding-right: 15px;
+    transition: background .2s linear;
 
 }
 .process__button  span:before {
     content: "";
     display: block;
-    width: 16px;
+    width: 15px;
     height: 1px;
     background-color: #7f7f7f;
-    margin-left: 14.87%;
+    margin-left: 6.87%;
     margin-top: 10px;
     transform: rotate(90deg);
     position: absolute;
     padding-right: 15px;
+    transition: background .2s linear;
 }
 .process__button {
     border: 0;
     background: #fff;
     border-radius: 27px;
-    position: absolute;
     font-size: 16px;
     color: #333;
     height: 55px;
     box-shadow: 0 6px 14px 0 rgba(20, 20, 21, 0.09);
     width: 88%;
     bottom: -27px;
+    margin-top: 25px;
     left: 15px;
     outline: none;
     transition: background .2s linear, color .2s linear;
@@ -208,6 +210,12 @@ body {
     background-color: #ff5c36;
     color: #fff;
 }
+.process__button:hover span:after {
+    background-color: #fff;
+}
+.process__button:hover span:before {
+    background-color: #fff;
+}
 
 .work__item {
     max-width: 360px;
@@ -215,12 +223,16 @@ body {
     background-color: #ff5c36;
     margin: 0 auto 23px;
 }
+.works__button {
+    position: absolute;
+}
 .service__logo {
     max-width: 104px;
     height: 92px;
     border-radius: 2px;
     margin-bottom: 5px;
     background: #fbfbfb;
+    cursor: pointer;
 }
 .service__logo img {
     padding-top: 24px;
@@ -249,6 +261,10 @@ body {
 }
 .intro {
     font-size: 16px;
+    display: none;
+}
+.active {
+    display: block !important;
 }
 .intro__text {
     color: #737373;
@@ -264,6 +280,9 @@ body {
 .service__image {
     display: block;
     max-width: 361px;
+}
+.service__image-div {
+    display: none;
 }
 .team__item {
     width: 360px;
@@ -334,6 +353,7 @@ body {
     left: 29.17%;
     position: absolute;
 }
+
 .english {
     padding-bottom: 14px;
 }
@@ -407,11 +427,12 @@ body {
     padding-right: 40px;
     position: relative;
     z-index: 1;
+    transition: all .2s linear;
 }
 .reviews:hover {
     box-shadow: 0 0 27px 0 rgba(20, 20, 21, 0.09);
-    border: 0;
-    transition: box-shadow .2s ease-in-out;
+    border: 1px solid #fff;
+    transition: all .2s ease-in-out;
 }
 .reviews__text {
     color: #4c4c4c;
@@ -430,7 +451,7 @@ body {
 .reviewer__name span {
     font-weight: 600;
 }
-.slider__left {
+.slider__left{
     width: 48px;
     height: 48px;
     background-color: #fff;
@@ -684,6 +705,9 @@ body {
 
 }
 @media screen and (max-width: 360px) {
+    .menu {
+        margin-left: -10px;
+    }
     .member {
         width: 200px;
         height: 85px;
