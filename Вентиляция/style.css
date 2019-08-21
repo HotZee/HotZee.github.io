@@ -1,0 +1,133 @@
+body {
+    font-size: 14px;
+}
+h1,h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.logo {
+    max-width: 250px;
+    width: 100%;
+    margin-right: 40px;
+}
+.nav {
+    margin: auto 40px;
+    font-size: 25px;
+}
+.nav a {
+    margin: 0 25px;
+}
+
+/*TEXT*/
+.text-center {
+    text-align: center;
+}
+.image {
+    width: 100%;
+}
+.reasons-to-buy {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+.reason__item {
+    width: 50%;
+    position: relative;
+    margin-top: 30px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.reason__item_img {
+    position: absolute;
+}
+.reason__item_content {
+    margin-left: 140px;
+}
+
+.ventilation-image {
+    display: flex;
+    justify-content: center;
+}
+
+/*WORKS*/
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-item {
+    width: 50%;
+    position: relative;
+    margin-bottom: 80px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.work__image {
+    position: absolute;
+}
+.work__content {
+    margin-left: 140px;
+}
+
+
+@media (max-width: 1170px) {
+    .logo {
+        margin-right: 20px;
+    }
+    .nav {
+        font-size: 20px;
+        margin: auto 20px;
+    }
+    .nav a {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 12px;
+    }
+    h1,h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .nav {
+        font-size: 15px;
+    }
+    .nav a {
+        margin: 0 5px;
+    }
+}
+
+
+
+
