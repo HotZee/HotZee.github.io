@@ -7,6 +7,8 @@
     <title>Tableto</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="assets/css/slick.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/e9b256ead4.js" crossorigin="anonymous"></script>
 </head>
@@ -29,23 +31,23 @@
             </div>
         </div>
     </div>
-<!--    HEADER TOP CONTENT-->
+    <!--    HEADER TOP CONTENT-->
 
     <div class="header__main">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2">
-                    <div class="header__logo">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+                    <div class="header__logo" id="logoTop">
                         tableto
                     </div>
                 </div>
-                <div class="hidden-xs col-sm-5 col-md-6 col-lg-7">
+                <div class="hidden-headerItem col-sm-5 col-md-6 col-lg-7">
                     <div class="header__search">
                         <input class="header__search_input" type="text" name="search" placeholder="Поиск">
                         <button class="header__search_button"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="hidden-xs col-sm-4 col-md-3 col-lg-3 pull-right text-right">
+                <div class="hidden-headerItem col-sm-4 col-md-3 col-lg-3 pull-right text-right">
                     <div class="header__contacts">
                         <div class="header__contacts_number">
                             +7 (800) 999-99-99
@@ -55,123 +57,86 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden-xs col-sm-12 col-md-12 col-lg-10">
+                <div class=" header-nav col-sm-12 col-md-12 col-lg-10" id="menu-item">
                     <div class="header__menu_content">
                         <ul class="menu__item first__menu"><a href="">Эрекция</a>
                             <div class="menu_items first__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item second__menu"><a href="">Пролонгация</a>
                             <div class="menu_items second__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item third__menu"><a href="">Комбинированная</a>
                             <div class="menu_items third__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item fourth__menu"><a href="">Для женщин</a>
                             <div class="menu_items fourth__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item fives__menu"><a href="">Красота</a>
                             <div class="menu_items fives__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item sixth__menu"><a href="">Здоровье</a>
                             <div class="menu_items sixth__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                         <ul class="menu__item seventh__menu"><a href="">О магазине</a>
                             <div class="menu_items seventh__menu_items">
-                                <li>Suhagra 25 mg</li>
-                                <li>Malegra 50 mg</li>
-                                <li>Cenforce 50 mg</li>
-                                <li>Malegra 100 mg</li>
-                                <li>Aurogra 100 mg</li>
-                                <li>Eriocta 100 mg</li>
-                                <li>Eregra 100 mg</li>
-                                <li>Viprogra 100 mg</li>
-                                <li>Suhagra 100 mg</li>
-                                <li>Delgra 100 mg</li>
-                                <li>Filagra 100 mg</li>
-                                <li>Sildigra 100 mg</li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Suhagra 25 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Cenforce 50 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Malegra 100 mg</a></li>
+                                <li><a href="https://www.google.com.ua/?hl=ru">Aurogra 100 mg</a></li>
                             </div>
                         </ul>
                     </div>
+                    <div class="header__search header__searchNav">
+                        <input class="header__search_input header__searchInpt" type="text" name="search" placeholder="Поиск">
+                        <button class="header__search_button header__searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="header__contacts header__cntcts">
+                        <div class="header__contacts_number">
+                            +7 (800) 999-99-99
+                        </div>
+                        <div class="header__contacts_text">
+                            Заказать обратный звонок
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-12 col-lg-2 pull-right">
+                <div class="col-xs-9 col-sm-3 col-md-12 col-lg-2 pull-right">
                     <div class="userAndBasketWrapper">
                         <ul class="user">
                             <img src="assets/images/user.png">
@@ -182,10 +147,17 @@
                         </ul>
                     </div>
                 </div>
+
+                <button class="nav_toggle" id="burger_menu" type="button">
+                    <span class="nav_toggle-item">Menu</span>
+                </button>
+
+
             </div>
         </div>
     </div>
-<!--    HEADER MAIN-->
+    <!--    HEADER MAIN-->
+
 </header>
 
 <section class="main__slider">
@@ -194,30 +166,45 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-11 col-md-offset-1">
+            <div class="col-md-11 col-md-offset-1 slider-container">
                 <div class="main__slider_wrapper">
-                    <div class="main__slider_about">
-                        <div class="main__slider_about--title">
-                            Выбирай лучшее на Tableto.ru
+                    <div class="slider-test">
+                        <div class="main__slider_about">
+                            <div class="main__slider_about--title">
+                                Tableto.ru выбирай лучшее
+                            </div>
+                            <div class="main__slider_about--text">
+                                Это главный компонент, который и обеспечивает лекарственное воздействие Что такое действующее вещество?
+                            </div>
                         </div>
-                        <div class="main__slider_about--text">
-                            Что такое действующее вещество? Это главный компонент, который и обеспечивает лекарственное воздействие
+                        <div class="main__slider_photo">
+                            <img src="assets/images/main-slider/photo1.png">
                         </div>
                     </div>
-                    <div class="main__slider_photo">
-                        <img src="assets/images/main-slider/photo1.png">
+                    <div class="slider-test">
+                        <div class="main__slider_about">
+                            <div class="main__slider_about--title">
+                                Выбирай лучшее на Tableto.ru
+                            </div>
+                            <div class="main__slider_about--text">
+                                Что такое действующее вещество? Это главный компонент, который и обеспечивает лекарственное воздействие
+                            </div>
+                        </div>
+                        <div class="main__slider_photo">
+                            <img src="assets/images/main-slider/photo2.png">
+                        </div>
                     </div>
-                    <div class="main__slider_buttons">
-                        <div class="slider__arrows prev"></div>
-                        <div class="slider__arrows next"></div>
-                    </div>
+                </div>
+                <div class="main__slider_buttons">
+                    <div class="slider__arrows prev"></div>
+                    <div class="slider__arrows next"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--MAIN SLIDER-->
-<section class="main-page">
+<section class="main-page main-page-First">
     <div class="container">
         <div class="row">
 
@@ -1057,8 +1044,11 @@
     </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<!--<sript src="assets/js/slick.min.js"></sript>-->
 <script src="assets/js/js.js"></script>
 
 </body>
