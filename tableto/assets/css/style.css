@@ -1081,7 +1081,7 @@ footer {
     margin-bottom: 30px;
 }
 .footer__contacts_number {
-    color: #3D2949;
+    color: #3D2949!important;
     font-weight: bold;
     font-size: 24px;
 }
