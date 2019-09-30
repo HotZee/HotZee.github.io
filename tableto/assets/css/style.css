@@ -1886,6 +1886,7 @@ tbody>tr:last-child {
 .test>input {
     width: 100%;
     margin-bottom: 10px;
+   -webkit-appearance: none;
 }
 
 .user-cabinet__itemOrders {
