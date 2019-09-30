@@ -405,6 +405,10 @@ li>a:after {
 li>a:before {
     display: none;
 }
+input {
+    -webkit-appearance: none!important;
+    border-radius: 0;
+}
 .bg-white {
     background: #ffffff;
 }
