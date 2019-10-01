@@ -28,7 +28,7 @@ $(function () {
 
     $(".user-cabinet__triangle").on("click", function (event) {
         event.preventDefault();
-        $(".user-cabinet__triangle").parent().toggleClass("active");
+        $(this).parent().toggleClass("active");
     });
 
     $("#autoFillButton").on("click", function (event) {
