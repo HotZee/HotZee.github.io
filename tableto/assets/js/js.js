@@ -66,10 +66,48 @@ $(function () {
     });
 
 
+// RATE
+
+    $(".star-rating__ico").on("click", function (event) {
+        var temp = $(this).attr("data-value");
+        $("#score").attr("value", temp);
+    });
+
+    // MODAL FEEDBACK
+
+    $("#reviews-button").on("click", function (event) {
+       $("#modalFeedback").addClass("active");
+    });
+
+    $("#close-feedback").on("click", function (event) {
+        $("#modalFeedback").removeClass("active");
+    });
+
+    // MODAL ONECLICKBUY
+
+    $("#onClickBuy-btn").on("click", function (event) {
+        $("#modalOneClick").addClass("active");
+    });
+
+    $("#close-oneClickBuy").on("click", function (event) {
+        $("#modalOneClick").removeClass("active");
+    });
+
+    // MODAL CALLMEBACK
+
+    $(".header__contacts_text").on("click", function (event) {
+        $("#modalCallMeBack").addClass("active");
+    });
+
+    $("#close-callMeBack").on("click", function (event) {
+        $("#modalCallMeBack").removeClass("active");
+    });
+
 
 
 });
 
+// SLICK SLIDER
 
 $(document).ready(function(){
     $('.main__slider_wrapper').slick({
