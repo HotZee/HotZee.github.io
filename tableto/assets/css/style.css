@@ -517,6 +517,8 @@ input[type='number'] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-height: 538px;
+    height: 100%;
 }
 .popup-close {
     width: 90px;
@@ -541,6 +543,9 @@ input[type='number'] {
 }
 .popup-body__button:focus {
     outline: none;
+}
+#modalCallMeBack>div>.popup-body {
+    max-height: 300px;
 }
 .popup-rate__text {
     display: inline-block;
@@ -2209,7 +2214,6 @@ tbody>tr:last-child {
 .border-right-1px-solid-f4f4f4 {
     border-right: 1px solid #f4f4f4;
 }
-
 @media (max-width: 1200px) {
     .userAndBasketWrapper {
         margin-top: 35px;
@@ -2598,7 +2602,7 @@ tbody>tr:last-child {
     }
     .user {
         float: right;
-        margin-right: 60px;
+        margin-right: 17px;
     }
     .nav_toggle {
         display: block;
@@ -2715,6 +2719,12 @@ tbody>tr:last-child {
     .product__card_price {
         width: 93%;
     }
+    .popup-body {
+        overflow: scroll;
+    }
+    .basket {
+        margin-right: 60px;
+    }
 }
 @media (max-width: 680px) {
     .basket__table_image {
@@ -2740,6 +2750,19 @@ tbody>tr:last-child {
     }
     .thead-thirdItem {
         width: 16%;
+    }
+}
+@media (max-width: 600px) {
+    .popup-input__reviewText {
+        min-height: 95px;
+    }
+    .popup-body {
+        max-height: 447px;
+    }
+    .popup-close {
+        top: 6px;
+        right: 6px;
+        color: #3D2949;
     }
 }
 @media (max-width: 525px) {
@@ -2891,6 +2914,7 @@ tbody>tr:last-child {
     }
     .popup-body {
         padding: 20px 13px;
+        max-height: 400px;
     }
     .basket__title {
         font-size: 30px;
@@ -2898,10 +2922,12 @@ tbody>tr:last-child {
     .basket__afterTable_rightSide--total-text {
         width: 70%;
     }
-    .popup-close {
-        top: 6px;
-        right: 6px;
-        color: #3D2949;
+    .product__card_price {
+        width: 87%;
+    }
+    #modalCallMeBack>div>.popup-body {
+        max-height: 315px;
+        min-height: 315px!important;
     }
 }
 @media (max-width: 375px) {
@@ -2912,6 +2938,15 @@ tbody>tr:last-child {
     .checkout__main_city--input::placeholder {
         font-size: 12px;
     }
+    .product__card_price {
+        width: 83%;
+    }
+}
+@media (max-width: 343px) {
+    #modalCallMeBack>div>.popup-body {
+        min-height: 342px!important;
+        max-height: 342px;
+    }
 }
 @media (max-width: 320px) {
     .basket__title {
@@ -2919,11 +2954,6 @@ tbody>tr:last-child {
     }
 }
 
-.popup-body {
-    max-height: 538px;
-    height: 100%;
-    overflow: scroll;
-}
 
 
 

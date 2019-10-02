@@ -108,13 +108,14 @@ $(function () {
 
     $(".popup-overlay").on("click", function (event) {
         var modal = $(".popup-body *");
+        var modal2 = $(".popup-body")
         var input = $("input");
         var textarea = $("textarea");
         var button = $("button");
         var popupTitle = $(".popup-title");
         var popupRate = $(".popup-rate");
         var popupRateInner = $(".popup-rate *");
-        if(!modal.is(event.target) && !input.is(event.target) && !textarea.is(event.target) && !button.is(event.target) && !popupTitle.is(event.target) && !popupRate.is(event.target) && !popupRateInner.is(event.target)) {
+        if(!modal.is(event.target) && !modal2.is(event.target) && !input.is(event.target) && !textarea.is(event.target) && !button.is(event.target) && !popupTitle.is(event.target) && !popupRate.is(event.target) && !popupRateInner.is(event.target)) {
             $(this).parent().removeClass("active");
         }
     });
