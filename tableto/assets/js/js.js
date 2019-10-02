@@ -66,6 +66,7 @@ $(function () {
     });
 
 
+
 // RATE
 
     $(".star-rating__ico").on("click", function (event) {
@@ -101,6 +102,21 @@ $(function () {
 
     $("#close-callMeBack").on("click", function (event) {
         $("#modalCallMeBack").removeClass("active");
+    });
+
+
+
+    $(".popup-overlay").on("click", function (event) {
+        var modal = $(".popup-body *");
+        var input = $("input");
+        var textarea = $("textarea");
+        var button = $("button");
+        var popupTitle = $(".popup-title");
+        var popupRate = $(".popup-rate");
+        var popupRateInner = $(".popup-rate *");
+        if(!modal.is(event.target) && !input.is(event.target) && !textarea.is(event.target) && !button.is(event.target) && !popupTitle.is(event.target) && !popupRate.is(event.target) && !popupRateInner.is(event.target)) {
+            $(this).parent().removeClass("active");
+        }
     });
 
 
