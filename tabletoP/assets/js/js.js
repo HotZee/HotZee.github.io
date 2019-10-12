@@ -200,8 +200,9 @@ $(function () {
 
     $(function () {
         if ( $(window).width() > 768 ) {
+            var nameHeight = $("#productCardItemName").height();
             $("#productPricingDiv").css({'height':($("#productDiv").height()+'px')});
-            $("#productPhotoDiv").css({'height':($("#productDiv").height()-104+'px')});
+            $("#productPhotoDiv").css({'height':($("#productDiv").height()-nameHeight+'px')});
         }
         else {
             $("#productPricingDiv").css({'height': '530px'});
@@ -212,8 +213,9 @@ $(function () {
 
     $(window).resize(function() {
         if ( $(window).width() > 768 ) {
+            var nameHeight = $("#productCardItemName").height();
             $("#productPricingDiv").css({'height':($("#productDiv").height()+'px')});
-            $("#productPhotoDiv").css({'height':($("#productDiv").height()-104+'px')});
+            $("#productPhotoDiv").css({'height':($("#productDiv").height()-nameHeight+'px')});
         }
         else {
             $("#productPricingDiv").css({'height': '530px'});

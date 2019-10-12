@@ -3048,7 +3048,7 @@ tbody>tr:last-child {
         padding-left: 10px;
     }
     .product__card_price {
-        width: 93%;
+        width: 100%;
     }
     .popup-body {
         overflow: scroll;
@@ -3161,6 +3161,12 @@ tbody>tr:last-child {
     .padding-right-0-productCardItemName {
         padding-right: 15px;
     }
+    .price-discount {
+        right: 0;
+    }
+    .product__card_price--price-price {
+        padding-right: 47px;
+    }
 }
 @media (max-width: 680px) {
     .basket__table_image {
@@ -3210,6 +3216,11 @@ tbody>tr:last-child {
     }
     .basket__afterTable_rightSide--total-text {
         width: 68%;
+    }
+}
+@media (max-width: 448px) {
+    .checkout_main_delivery--tbody-deliveryName {
+        width: 37%;
     }
 }
 @media (max-width: 430px) {
@@ -3365,9 +3376,6 @@ tbody>tr:last-child {
     .basket__afterTable_rightSide--total-text {
         width: unset;
     }
-    .product__card_price {
-        width: 87%;
-    }
     #modalCallMeBack>div>.popup-body {
         max-height: 315px;
         min-height: 315px!important;
@@ -3405,9 +3413,6 @@ tbody>tr:last-child {
     }
     .checkout__main_city--input::placeholder {
         font-size: 12px;
-    }
-    .product__card_price {
-        width: 83%;
     }
     .checkout_main_delivery--tbody-deliveryName {
         width: 30%;
