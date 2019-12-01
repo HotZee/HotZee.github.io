@@ -3341,6 +3341,7 @@ footer .copyright {
 @media (max-width: 425px) {
     .edu-question {
         padding: 0;
+        padding-bottom: 5px;
     }
     .edu-question-text ul li {
         font-size: 1.3rem;
@@ -3568,6 +3569,7 @@ and (orientation : landscape) {
     }
     .edu-question {
         padding: 0;
+        padding-bottom: 5px;
     }
     .edu-question-text ul li {
         font-size: 1.3rem;
