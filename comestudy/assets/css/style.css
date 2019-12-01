@@ -2701,26 +2701,24 @@ footer .copyright {
     top: 42%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 140.5rem;
-    width: 75%;
 }
 
 .main-banner-title h1 {
     margin: 0;
-    font-size: calc( (100vw - 150rem)/(198 - 150) * (7 - 6) + 6rem);
+    font-size: calc( (100vw - 150rem)/(198 - 150) * (6 - 5) + 5rem);
     text-align: center;
 }
 
 
 @media (max-width: 1500px) {
     .main-banner-title h1 {
-        font-size: calc( (100vw - 110rem)/(150 - 110) * (6 - 5) + 5rem);
+        font-size: calc( (100vw - 110rem)/(150 - 110) * (5 - 4) + 4rem);
     }
 }
 
 @media (max-width: 1100px) {
     .main-banner-title h1 {
-        font-size: calc( (100vw - 76.8rem)/(110 - 76.8) * (5 - 3) + 3rem);
+        font-size: calc( (100vw - 76.8rem)/(110 - 76.8) * (4 - 3) + 3rem);
     }
 }
 
@@ -2730,6 +2728,12 @@ footer .copyright {
     }
     .main-banner-title {
         padding: 1.2rem;
+    }
+}
+
+@media (max-width: 522px) {
+    .main-banner-title {
+        width: calc( (100vw - 32rem)/(55.2 - 32) * (30 - 24) + 24rem);
     }
 }
 
@@ -2776,8 +2780,8 @@ footer .copyright {
     z-index: 3;
     background: #ffffff;
     border-radius: 1.8rem;
-    border: #b24968 0.3rem solid;
     border: var(--brick-color) 0.3rem solid;
+    border: #b24968 0.3rem solid;
 }
 .flex-accordion ul li .panel-inner .button {
     position: absolute;
@@ -2792,6 +2796,9 @@ footer .copyright {
     white-space: nowrap;
     overflow: hidden;
     transform: translateX(-2rem);
+    -webkit-transform: translateX(-2rem);
+    -moz-transform: translateX(-2rem);
+    -ms-transform: translateX(-2rem);
     transition: all 0.5s ease;
 }
 .flex-accordion ul li .panel-inner .title {
@@ -2807,6 +2814,9 @@ footer .copyright {
 .flex-accordion ul li .panel-inner .title__inner {
     position: absolute;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
 }
 .flex-accordion ul li .panel-inner .title__text {
     font-size: 1.9rem;
@@ -2814,6 +2824,15 @@ footer .copyright {
     width: 40rem;
     margin-top: 9rem;
     transform: rotate(90deg) translate3d(50%, 815%, 0) !important;
+    -webkit-transform: rotate(90deg) translate3d(50%, 815%, 0) !important;
+    -moz-transform: rotate(90deg) translate3d(50%, 777%, 0) !important;
+    -ms-transform: rotate(90deg) translate3d(50%, 777%, 0) !important;
+
+}
+@supports (-ms-ime-align:auto) {
+    .flex-accordion ul li .panel-inner .title__text {
+        transform: rotate(90deg) translate3d(50%, 777%, 0) !important;
+    }
 }
 .flex-accordion ul li .panel-inner .title img {
     width: 6rem;
@@ -2836,6 +2855,7 @@ footer .copyright {
 }
 
 .flex-accordion ul li.is-open {
+    -ms-flex: 1 1 auto;
     flex-grow: 1;
     transition: all 0.5s ease;
 }
@@ -3193,8 +3213,12 @@ footer .copyright {
 
 /*LEVEL OF EDUCATION START*/
 
-.edu-section {
-    background: url(https://comestudy.com.ua/images/why_do.png);
+.edu-section-start {
+    background: url(https://comestudy.com.ua/images/why_do.png) top;
+    background-size: cover;
+}
+.edu-section-end {
+    background: url(https://comestudy.com.ua/images/why_do.png) bottom;
     background-size: cover;
 }
 
@@ -3219,7 +3243,7 @@ footer .copyright {
 }
 .level-item__title {
     text-align: center;
-    font-size: calc( (100vw - 76.8rem)/(198 - 76.8) * (3.2 - 2.5) + 2.5rem);
+    font-size: calc( (100vw - 76.8rem)/(198 - 76.8) * (3.2 - 2.3) + 2.3rem);
     font-weight: bold;
     padding: 0.5rem 0 2rem 0;
     position: relative;
@@ -3334,6 +3358,10 @@ footer .copyright {
     }
     .edu-question-text ul {
         padding-left: 2.5rem;
+    }
+    .edu-question-text ul li {
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -3459,6 +3487,34 @@ footer .copyright {
 }
 
 @media (max-width: 425px) {
+    .discounts-title:first-child {
+        margin-bottom: 1.5rem;
+    }
+
+    .discounts-title:last-child {
+        margin-top: 1.5rem;
+    }
+    .discounts-item {
+        margin-bottom: 1rem;
+    }
+    .discounts-image__div {
+        display: none;
+    }
+    .discounts-image__text p {
+        text-align: left;
+        margin: 0;
+    }
+    .discounts-image__text p img {
+        display: block;
+        width: 80px;
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+@media only screen
+and (max-device-width : 900px)
+and (orientation : landscape) {
     .discounts-title:first-child {
         margin-bottom: 1.5rem;
     }
