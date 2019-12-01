@@ -2724,7 +2724,7 @@ footer .copyright {
 
 @media (max-width: 768px) {
     .main-banner-title h1 {
-        font-size: calc( (100vw - 32rem)/(76.8 - 32) * (3 - 2.4) + 2.4rem);
+        font-size: calc( (100vw - 32rem)/(76.8 - 32) * (3 - 2.3) + 2.3rem);
     }
     .main-banner-title {
         padding: 1.2rem;
