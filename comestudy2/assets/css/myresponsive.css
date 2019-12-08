@@ -1,5 +1,42 @@
-/*FIRST FORM SECTION START*/
+/*MAIN SETTINGS START*/
+
 @media (max-width: 992px) {
+    .sectionIM {
+        padding: 6rem 0;
+    }
+}
+@media (max-width: 767px) {
+    .sectionIM {
+        padding: 5rem 0;
+    }
+}
+@media (max-width: 450px) {
+    .sectionIM {
+        padding: 4rem 0;
+    }
+}
+/*MAIN SETTINGS END*/
+
+
+/*BENEFIT SECTION START*/
+@media (max-width: 768px) {
+    .benefit-item p {
+        font-size: calc(0.2rem + 1.8vw);
+        line-height: calc(0.2rem + 2vw);
+        margin: auto;
+        margin-left: auto;
+        display: block;
+        text-align: left;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 2px solid var(--brown-color);
+        width: 100%;
+    }
+}
+/*BENEFIT SECTION END */
+
+/*FIRST FORM SECTION START*/
+@media (max-width: 991px) {
     .first-form {
         padding-left: 0;
     }
@@ -25,9 +62,15 @@
         height: 0.3rem;
     }
 }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .first-form-about_item p:before {
+        width: 17vw;
+        left: -17vw;
+    }
+}
 @media screen and (max-width: 767px) and (orientation: portrait) {
     .first-form-section .first-form-wrapper {
-        margin: 5vw auto;
+        margin: 0 auto;
         width: 80%;
         padding: 5vw;
     }
@@ -85,6 +128,9 @@
     .first-form-inputsWrapper {
         padding-bottom: 1rem;
     }
+    .first-form-about {
+        display: none;
+    }
 }
 /*FIRST FORM SECTION END*/
 
@@ -95,6 +141,23 @@
         border-right: none;
     }
 
+}
+@media screen and (max-width: 920px) and (orientation: landscape) {
+    .arguments h2 {
+        font-size: calc(0.1rem + 5.5vw);
+    }
+    .feedback_section .feedback_title {
+        margin-bottom: 0;
+    }
+    .arguments-item {
+        padding: 1rem;
+    }
+    .feedaback_inner {
+        margin-top: 2rem;
+    }
+    .feedback_text {
+        padding-bottom: 1rem;
+    }
 }
 @media screen and (max-width: 767px) and (orientation: portrait) {
     .arguments h2 {
@@ -155,29 +218,81 @@
         padding-top: 0;
     }
 }
+@media screen and (max-width: 920px) and (orientation: landscape) {
+    .second-form-image-wrapper {
+        display: none;
+    }
+    .second-form-inputs-wrapper {
+        padding-top: 0;
+    }
+}
 /*SECOND FORM SECTION END*/
 
 
-/*PRICE SECTION START*/
-@media (max-width: 992px) {
-    .price-item {
-        margin-bottom: 1rem;
+/*STEPS SECTION START*/
+@media screen and (max-width: 992px) and (orientation: portrait) {
+    .steps-three_steps-article-bottom .steps-content-box {
+        top: 1.5rem;
     }
 }
 @media (max-width: 767px) {
+    .three_steps-article {
+        width: 25%;
+    }
+    .main-three_steps-section .conference-center-line {
+        left: 50%;
+    }
+}
+@media screen and (max-width: 920px) and (orientation: landscape) {
+
+}
+/*STEPS SECTION END*/
+
+
+/*PRICE SECTION START*/
+@media (max-width: 1199px) {
+    .price-item-text li {
+        font-size: 1.8rem;
+    }
     .price-item {
-        width: 60%;
+        min-height: 42.5rem;
+    }
+}
+@media (max-width: 991px) {
+    .price-item {
+        min-height: 2rem;
+        width: 50%;
         margin: 0 auto 1rem auto;
+    }
+}
+@media (max-width: 767px) {
+    .price-main-title h2 {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (4 - 2.8) + 2.8rem);
+    }
+    .price-item-title h3 {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (3 - 2.3) + 2.3rem);
+    }
+    .price-main-footer li {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (1.5 - 1.3) + 1.3rem);
+    }
+    .price-main-footer h3 {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (2.5 - 2) + 2rem);
+    }
+    .price-item-text li {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (2 - 1.6) + 1.6rem);
     }
 }
 @media (max-width: 550px) {
     .price-item {
-        width: 90%;
+        width: 70%;
     }
 }
 @media (max-width: 450px) {
     .price-item {
         width: 100%;
+    }
+    .price-main-footer ol {
+        padding-left: 2rem;
     }
 }
 /*PRICE SECTION END*/

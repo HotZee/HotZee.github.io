@@ -3649,6 +3649,8 @@ and (orientation : landscape) {
     background: #ffffff;
     padding: 2rem;
     border-radius: 1.8rem;
+    border: 3px solid #008cba;
+    border: 3px solid var(--blue-color);
 }
 .main-banner-title-second h1 {
     margin: 0;
@@ -3663,20 +3665,6 @@ and (orientation : landscape) {
     width: 23%;
     display: unset;
 }
-@media (max-width: 768px) {
-    .benefit-item p {
-        font-size: calc(0.2rem + 1.8vw);
-        line-height: calc(0.2rem + 2vw);
-        margin: auto;
-        margin-left: auto;
-        display: block;
-        text-align: left;
-        margin-left: 1rem;
-        padding-left: 1rem;
-        border-left: 2px solid var(--brown-color);
-        width: 100%;
-    }
-}
 /*BENEFIT SECTION END*/
 
 
@@ -3687,9 +3675,15 @@ and (orientation : landscape) {
     background-size: cover;
     background-position: left top;
 }
+.first-form-section .first-form-wrapper {
+    margin: 0 auto;
+}
 .contact_form_section .first-form-wrapper {
     width: 65%;
     padding: 4.5rem;
+}
+.first-form-about {
+    overflow: hidden;
 }
 .first-form-about_item {
     position: relative;
@@ -3817,7 +3811,7 @@ and (orientation : landscape) {
 .select2-container .select2-search--inline .select2-search__field {
     margin: 0;
     font-size: 1.4rem;
-    min-height: 1.2vw;
+    height: 2.4rem;
     width: 50%;
     margin-top: 0.5rem;
     padding-left: 0.3rem;
@@ -3979,7 +3973,7 @@ and (orientation : landscape) {
     left: -1.9vw;
 }
 .steps-three_steps-article-bottom .steps-content-box {
-    top: 10%;
+    top: 2rem;
 }
 .main-three_steps-section .steps-conference-center-line {
     left: 50%;
@@ -4038,12 +4032,14 @@ and (orientation : landscape) {
     border-radius: 1.8rem;
     border: rgb(178, 73, 104) 3px solid;
     margin-top: 3rem;
-    font-size: 1vw;
+    font-size: 2rem;
 }
 .price-main-footer h3 {
     font-size: 3rem;
     text-align: center;
-    margin: 0;
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: rgb(178, 73, 104) 3px solid;
 }
 .price-main-footer li {
     margin-top: 2rem;
