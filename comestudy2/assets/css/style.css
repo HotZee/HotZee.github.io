@@ -3660,7 +3660,22 @@ and (orientation : landscape) {
 
 /*BENEFIT SECTION START*/
 .benefit-item {
-    width: 22%;
+    width: 23%;
+    display: unset;
+}
+@media (max-width: 768px) {
+    .benefit-item p {
+        font-size: calc(0.2rem + 1.8vw);
+        line-height: calc(0.2rem + 2vw);
+        margin: auto;
+        margin-left: auto;
+        display: block;
+        text-align: left;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 2px solid var(--brown-color);
+        width: 100%;
+    }
 }
 /*BENEFIT SECTION END*/
 
@@ -3677,18 +3692,20 @@ and (orientation : landscape) {
     padding: 4.5rem;
 }
 .first-form-about_item {
-    overflow: hidden;
     position: relative;
     margin-bottom: 4rem;
     width: 100%;
     float: right;
-    margin-right: 20px;
+    margin-right: 1.5rem;
+}
+.first-form-about_item:first-child {
+    margin-top: 0.2rem;
 }
 .first-form-about_item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
 }
 .first-form-about_item img {
-    width: 10rem;
+    width: 5vw;
     float: left;
     border-radius: 5rem;
     border: rgb(178, 73, 104) 3px solid;
@@ -3717,7 +3734,7 @@ and (orientation : landscape) {
     margin-bottom: 10px;
 }
 .first-form-about_item p {
-    font-size: 2.5rem;
+    font-size: calc( (100vw - 99.2rem)/(198 - 99.2) * (2.5 - 1.5) + 1.5rem);
     font-weight: bold;
     color: #8C8C8C;
     position: absolute;
@@ -3727,7 +3744,7 @@ and (orientation : landscape) {
     border: rgb(178, 73, 104) 3px solid;
     border-radius: 1.8rem;
     padding: 1rem;
-    width: 65%;
+    width: 70%;
     text-align: center;
     right: 0;
 }
@@ -3800,9 +3817,10 @@ and (orientation : landscape) {
 .select2-container .select2-search--inline .select2-search__field {
     margin: 0;
     font-size: 1.4rem;
-    height: 1.2vw;
+    min-height: 1.2vw;
     width: 50%;
     margin-top: 0.5rem;
+    padding-left: 0.3rem;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     font-size: 16px;
@@ -3833,6 +3851,23 @@ and (orientation : landscape) {
 }
 .select2-results__option:last-child[aria-selected=true] .first-form_textarea-wrapper {
     display: block;
+}
+
+
+@media (max-width: 992px) {
+    .first-form {
+        padding-left: 0;
+    }
+    .first-form-about_item {
+        margin-right: 0;
+    }
+    .first-form p {
+        padding-left: 0;
+    }
+    .first-form-about_item p:before {
+        width: 14vw;
+        left: -14vw;
+    }
 }
 /*FIRST FORM SECTION END*/
 
@@ -3981,7 +4016,7 @@ and (orientation : landscape) {
 }
 .price-main-title h2 {
     margin: 0;
-    font-size: 2vw;
+    font-size: 4rem;
     font-weight: bold;
 }
 .price-item {
@@ -3993,13 +4028,13 @@ and (orientation : landscape) {
 }
 .price-item-title h3 {
     margin: 0 0 1rem 0;
-    font-size: 1.5vw;
+    font-size: 3rem;
     text-align: center;
     padding-bottom: 2rem;
     border-bottom: rgb(178, 73, 104) 3px solid;
 }
 .price-item-text {
-    font-size: 1vw;
+    font-size: 2rem;
 }
 .price-item-text li {
     position: relative;
@@ -4023,7 +4058,7 @@ and (orientation : landscape) {
     font-size: 1vw;
 }
 .price-main-footer h3 {
-    font-size: 1.5vw;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
 }

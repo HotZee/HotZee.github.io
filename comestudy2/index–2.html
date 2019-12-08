@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://comestudy.com.ua/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/myresponsive.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+<!--MAIN SECTION START-->
+<section class="sectionFirst-secondPage">
+    <div class="main-banner-title-second wow fadeIn" data-wow-duration="2s">
+        <h1>МЕЖДУНАРОДНАЯ ОНЛАЙН ШКОЛА СЛОВАЦКОГО ЯЗЫКА №1 - ComeStudy </h1>
+        <h2>Эффективное изучение словацкого языка с нуля. Подойдет тем, кто хочет подготовиться к поступлению в университет а так же жить и работать в Словакии.</h2>
+    </div>
+</section>
+<!--MAIN SECTION END-->
+
+
+<!--BENEFIT SECTION START -->
+<section class="tezis_section  text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="col-sm-3 tezis_block benefit-item wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+                        <div class="tezis_icon">
+                            <img class="lazy" alt="learning" src="assets/img/benefits/learning.svg" style="display: inline;">
+                        </div>
+                        <hr>
+                        <p>
+                            Групповые и индивидуальные занятия
+                        </p>
+                    </div>
+                    <div class="col-sm-3 tezis_block benefit-item wow fadeInRight" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+                        <div class="tezis_icon">
+                            <img class="lazy" alt="efficiency" src="assets/img/benefits/efficiency.svg" style="display: inline;">
+                        </div>
+                        <hr>
+                        <p>
+                            Эффективная программа изучения языка
+                        </p>
+                    </div>
+                    <div class="col-sm-3 tezis_block benefit-item wow fadeInRight" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+                        <div class="tezis_icon">
+                            <img class="lazy" alt="levels" src="assets/img/benefits/settings.svg" style="display: inline;">
+                        </div>
+                        <hr>
+                        <p>
+                            Для начального, среднего и продвинутого уровней
+                        </p>
+                    </div>
+                    <div class="col-sm-3 tezis_block benefit-item wow fadeInRight" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInRight;">
+                        <div class="tezis_icon">
+                            <img class="lazy" alt="flexible" src="assets/img/benefits/yoga.svg" style="display: inline;">
+                        </div>
+                        <hr>
+                        <p>
+                            Гибкий график <br>занятий
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--BENEFIT SECTION END-->
+
+
+<!--FIRST FORM SECTION START-->
+<section class="contact_form_section first-form-section sectionIM">
+    <div class="container-fluid big_padding">
+        <div class="row">
+            <div class="content first-form-wrapper">
+                <div class="row">
+                    <form method="POST" class="mail_send_form first-form" action="javascript:void(null);" autocomplete="on">
+                        <h2>Записывайтесь на первый бесплатный урок</h2>
+                        <div class="col-md-6" style="overflow: hidden">
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/meeting.svg" alt="meeting">
+                                <p>Познакомимся</p>
+                            </div>
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/levels.svg" alt="levels">
+                                <p>Определим уровень</p>
+                            </div>
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/teacher.svg" alt="teacher">
+                                <p>Покажем как проходит урок</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                                <p>
+                                    <select class="js-example-basic-multiple" name="" multiple="multiple">
+                                        <option value="prep">Подготовка к поступлению в университет</option>
+                                        <option value="work">Для работы в Словакии</option>
+                                        <option value="prep">Подготовка к переезду</option>
+                                        <option value="other" id="first-form-otherItem">Другое</option>
+                                    </select>
+                                </p>
+                                <p class="first-form_textarea-wrapper">
+                                    <textarea class="first-form_textarea" placeholder="Цель обучения"></textarea>
+                                </p>
+
+
+                                <p>
+                                    <span class="required">*</span>
+                                    <input type="text" placeholder="Имя" name="name" value="" required="">
+                                </p>
+                                <p>
+                                    <span class="required">*</span>
+                                    <input type="tel" placeholder="Телефон." name="phone" value="" pattern="^(\+38)[0-9]{10}" required="" oninvalid="this.setCustomValidity('введите телефон в формате +380XXXXXXXXX')" oninput="this.setCustomValidity('')">
+                                </p>
+                                <p>
+                                    <input type="email" placeholder="Ваш email." name="email" value="">
+                                </p>
+                                <p>
+                                    <input type="text" placeholder="Промокод" maxlength="8" name="promo_cod" value="" class="promocod">
+                                </p>
+                                <div class="promo_alert_false alert alert-danger text-center hide" role="alert">
+                                    Промокод введен неверно :(
+                                </div>
+                                <div class="promo_alert_true alert alert-success text-center hide" role="alert">
+                                    Ваша скидка <span class="discount"> </span> €
+                                </div>
+                                <p class="indication first-form-indication">
+                                    <span style="color: #E5224C;"> * </span>Поле обязательно.</p>
+                                <p class="indication first-form-indication">
+                                    <span style="color: #E5224C;"> ** </span>Оставляя заявку, вы принимаете условия соглашения.</p>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FIRST FORM SECTION EDN-->
+
+
+<!--ARGUMENTS SECTION START-->
+<section class="sectionIM">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="feedback_section text-center" id=feedback>
+                    <div class="col-md-5 text-left">
+                        <div class="arguments">
+                            <h2>Пройдя курс вы:</h2>
+                            <div class="arguments-item">
+                                <img src="assets/img/checked.svg" alt="checked">
+                                <p>Расширите словарный запас на уровень A1,А2,B1,B2</p>
+                            </div>
+                            <div class="arguments-item">
+                                <img src="assets/img/checked.svg" alt="checked">
+                                <p>Подготовитесь к собеседованию или вступительному экзамену</p>
+                            </div>
+                            <div class="arguments-item">
+                                <img src="assets/img/checked.svg" alt="checked">
+                                <p>Улучшите знание грамматики на уровень A1,А2,B1,B2</p>
+                            </div>
+                            <div class="arguments-item">
+                                <img src="assets/img/checked.svg" alt="checked">
+                                <p>Улучшите восприятие на слух и отработаете произношение</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class=feedaback_inner>
+                            <h2 class="text-center feedback_title" style="margin-top: 0">
+                                Отзывы наших студентов
+                            </h2>
+                            <div class="swiper-container feedback_slider white_pagination">
+                                <div class=swiper-wrapper>
+                                    <div class=swiper-slide data-swiper-autoplay=5000>
+                                        <div class="col-xs-3 feedback_img_block">
+                                            <div style="position:relative;">
+                                                <img data-src="https://comestudy.com.ua/images/feedbacks/feedback-2-min.png" class="feedback_img swiper-lazy" alt=feedback_img>
+                                                <a class=feedback_social target=_blank href="https://www.facebook.com/profile.php?id=100010295685497">
+                                                    <img data-src="https://comestudy.com.ua/images/icons/facebook.svg" class=swiper-lazy alt=facebook>
+                                                </a>
+                                            </div>
+                                            <p class="feedback_name font_600">Валерия Охтина</p>
+                                        </div>
+                                        <div class="col-xs-9 feedback_text_block">
+                                            <p class="feedback_text ">
+                                                Отзанималась (пока что) только три урока, но уже прочувствовала,
+                                                насколько это же крутая школа! Сейчас в 11 классе и готовлюсь к поступлению в
+                                                университет, упражнения подобраны как раз к формату моего вступительного экзамена
+                                                (а еще после каждого отдельного упражнения мой репетитор Валерия пишет комментарии
+                                                моей успешности). Огромный плюс —  это бесплатные видео+ текстовые материалы.
+                                                В общем, если вы еще раздумываете, то рекомендую именно ComeStudy :)))
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=swiper-slide data-swiper-autoplay=5000>
+                                        <div class="col-xs-3 feedback_img_block">
+                                            <div style="position:relative;">
+                                                <img data-src="https://comestudy.com.ua/images/feedbacks/feedback-3-min.png" class="feedback_img swiper-lazy" alt=feedback_img>
+                                                <a class=feedback_social target=_blank href="https://www.facebook.com/dashkaHudym">
+                                                    <img data-src="https://comestudy.com.ua/images/icons/facebook.svg" class=swiper-lazy alt=facebook>
+                                                </a>
+                                            </div>
+                                            <p class="feedback_name font_600">Дарья Гудим</p>
+                                        </div>
+                                        <div class="col-xs-9 feedback_text_block">
+                                            <p class="feedback_text ">
+                                                Очень долго искала место, где можно выучить словацкий язык и подготовиться к
+                                                поступлению в университет, когда натолкнулась на «ComeStudy» и попробовала первое
+                                                пробное занятие, была безумно рада, это было именно то, что я искала!!
+                                                Учитывают любые пожелания в выборе преподавателя. Дают интересные домашние задания.
+                                                Я довольна! Благодарю.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=swiper-slide data-swiper-autoplay=5000>
+                                        <div class="col-xs-3 feedback_img_block">
+                                            <div style="position:relative;">
+                                                <img data-src="https://comestudy.com.ua/images/feedbacks/feedback-4-min.png" class="feedback_img swiper-lazy" alt=feedback_img>
+                                                <a class=feedback_social target=_blank href="https://www.facebook.com/aleksandr.shymko.1">
+                                                    <img data-src="https://comestudy.com.ua/images/icons/facebook.svg" class=swiper-lazy alt=facebook>
+                                                </a>
+                                            </div>
+                                            <p class="feedback_name font_600">Олександр Шимко</p>
+                                        </div>
+                                        <div class="col-xs-9 feedback_text_block">
+                                            <p class="feedback_text ">
+                                                Переезжали с семьей за рубеж и поэтому нужно было научиться свободно понимать иностранцев,
+                                                благодаря «ComeStudy» у нас это получилось . Компетентные преподаватели, особенно Валерия,
+                                                индивидуально подобранные занятия+ помогли с оформлением документов и переездом!! Всем советую!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=swiper-slide data-swiper-autoplay=5000>
+                                        <div class="col-xs-3 feedback_img_block">
+                                            <div style="position:relative;">
+                                                <img data-src="https://comestudy.com.ua/images/feedbacks/feedback-5-min.png" class="feedback_img swiper-lazy" alt=feedback_img>
+                                                <a class=feedback_social target=_blank href="https://www.facebook.com/Abrakadabra373">
+                                                    <img data-src="https://comestudy.com.ua/images/icons/facebook.svg" class=swiper-lazy alt=facebook>
+                                                </a>
+                                            </div>
+                                            <p class="feedback_name font_600">Олександр Луневський </p>
+                                        </div>
+                                        <div class="col-xs-9 feedback_text_block">
+                                            <p class="feedback_text ">
+                                                Спасибо за эту замечательную возможность. Это действительно он-лайн школа.
+                                                Кроме хорошего интерактивного материала на занятии с преподавателем она предлагает
+                                                еще мобильное приложение, в которое вносятся все изученные слова или ты сам можешь
+                                                добавить любое слово из словаря. После ежедневной работы с этим мобильным приложением нет
+                                                шансов не выучить слово. Кроме этого, школа предлагает уйму бесплатных и очень интересных
+                                                материалов, возможность участвовать в различных и мероприятиях и т.д. В общем супер!
+                                                Жаль, что закончилось.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class=swiper-pagination></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next fa fa-angle-right hidden-sm hidden-xs"></div>
+                                <div class="swiper-button-prev fa fa-angle-left hidden-sm hidden-xs"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+</section>
+<!--ARGUMENTS SECTION END-->
+
+
+<!--CONSIDER-OF SECTION START-->
+<section class="why_do_section consider_section text-center lazy">
+    <div class="why_do_overflow consider_overflow">
+        <div class=container-fluid>
+            <div class=row>
+                <div class="col-xs-5 why_do_block_inner">
+                    <div class="why_do_block wow slideInLeft">
+                        <div class="col-sm-12 why_do_desc consider_descr">
+                            <h3> <img class=lazy src="assets/img/consider-of/profanity.svg" alt="graduation "><span class="font_600 number-scroll">1000</span></h3>
+                            <hr>
+                            <p>
+                                слов к изучению
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-5 why_do_block_inner">
+                    <div class="why_do_block wow slideInRight">
+                        <div class="col-sm-12 why_do_desc consider_descr">
+                            <h3><img class="lazy" alt="themes" src="assets/img/consider-of/web-design.svg" style="display: inline;"><span class="font_600 number-scroll">60</span></h3>
+                            <hr>
+                            <p>
+                                тем для изучения
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=row>
+                <div class="why_do_block_title wow fadeIn">
+                    <h2 class=text-center>
+                        Из чего состоит курс ?
+                    </h2>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-xs-5 why_do_block_inner">
+                    <div class="why_do_block wow slideInLeft">
+                        <div class="col-sm-12 why_do_desc consider_descr">
+                            <h3><img class="lazy" alt="conversation" src="assets/img/consider-of/conversation.svg" style="display: inline;"><span class="font_600 number-scroll">35</span></h3>
+                            <hr>
+                            <p>
+                                часов разговорной практики
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-offset-2 col-xs-5 why_do_block_inner">
+                    <div class="why_do_block wow slideInRight">
+                        <div class="col-sm-12 why_do_desc consider_descr">
+                            <h3><img class=lazy src="assets/img/consider-of/grammar.svg" alt="graduation "><span class="font_600 number-scroll">200</span></h3>
+                            <hr>
+                            <p>
+                                упражнений на грамматику
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--CONSIDER-OF SECTION END-->
+
+<!--SECOND FORM SECTION START-->
+<section class="contact_form_section first-form-section sectionIM">
+    <div class="container-fluid big_padding">
+        <div class="row">
+            <div class="content first-form-wrapper second-form-wrapper">
+                <div class="row">
+                    <form method="POST" class="mail_send_form first-form second-form" action="javascript:void(null);" autocomplete="on">
+                        <h2>Хочу получить персональный план обучения</h2>
+                        <div class="col-sm-6 text-center second-form-image-wrapper">
+                            <img src="assets/img/second-form/date.svg" alt="date">
+                        </div>
+                        <div class="col-sm-6 text-right second-form-inputs-wrapper">
+
+
+                            <p>
+                                <span class="required">*</span>
+                                <input type="text" placeholder="Имя" name="name" value="" required="">
+                            </p>
+                            <p>
+                                <span class="required">*</span>
+                                <input type="tel" placeholder="Телефон." name="phone" value="" pattern="^(\+38)[0-9]{10}" required="" oninvalid="this.setCustomValidity('введите телефон в формате +380XXXXXXXXX')" oninput="this.setCustomValidity('')">
+                            </p>
+                            <p>
+                                <input type="email" placeholder="Ваш email." name="email" value="">
+                            </p>
+                            <p>
+                                <input type="text" placeholder="Промокод" maxlength="8" name="promo_cod" value="" class="promocod">
+                            </p>
+                            <div class="promo_alert_false alert alert-danger text-center hide" role="alert">
+                                Промокод введен неверно :(
+                            </div>
+                            <div class="promo_alert_true alert alert-success text-center hide" role="alert">
+                                Ваша скидка <span class="discount"> </span> €
+                            </div>
+                            <p class="indication first-form-indication">
+                                <span style="color: #E5224C;"> * </span>Поле обязательно.</p>
+                            <p class="indication first-form-indication">
+                                <span style="color: #E5224C;"> ** </span>Оставляя заявку, вы принимаете условия соглашения.</p>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECOND FORM SECTION END-->
+
+
+<!--STEPS SECTION START-->
+<section class="three_steps_section sectionIM steps-section">
+    <div class=container-fluid>
+        <div class=row>
+            <div class="wow fadeIn">
+                <h2 class="">
+                    Как начать заниматься словацким языком с ComeStudy?
+                </h2>
+            </div>
+        </div>
+        <div class=row>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <section class="main-three_steps-section ">
+                    <div class="conference-center-line steps-conference-center-line wow fadeIn" data-wow-duration=1s data-wow-delay=1.5s></div>
+                    <div class=conference-three_steps-content>
+                        <div class="three_steps-article three_steps-article-top">
+                            <div class="meta-date steps-meta-date wow bounceInRight" data-wow-duration=1s data-wow-delay=0.9s>
+                                <img class=lazy src="assets/img/steps/four.svg" alt="four">
+                            </div>
+                            <div class="content-box steps-content-box wow fadeInUp" data-wow-duration=0.5s data-wow-delay=1.5s>
+                                <p>Система подберет для вас репетитора мечты</p>
+                            </div>
+                        </div>
+                        <div class="three_steps-article three_steps-article-bottom steps-three_steps-article-bottom">
+                            <div class="meta-date steps-meta-date wow bounceInRight" data-wow-duration=1s data-wow-delay=0.6s>
+                                <img class=lazy src="assets/img/steps/three.svg" alt="three">
+                            </div>
+                            <div class="content-box steps-content-box wow fadeInDown" data-wow-duration=0.5s data-wow-delay=1.5s>
+                                <p>Репетитор подготовит персональный план обучения</p>
+                            </div>
+                        </div>
+                        <div class="three_steps-article three_steps-article-top">
+                            <div class="meta-date  steps-meta-date wow bounceInRight" data-wow-duration=1s data-wow-delay=0.3s>
+                                <img class=lazy src="assets/img/steps/two.svg" alt="two">
+                            </div>
+                            <div class="content-box steps-content-box wow fadeInUp" data-wow-duration=0.5s data-wow-delay=1.5s>
+                                <p>Ваш личный менеджер обучения организует вводный урок</p>
+                            </div>
+                        </div>
+                        <div class="three_steps-article three_steps-article-bottom steps-three_steps-article-bottom">
+                            <div class="meta-date steps-meta-date wow bounceInRight" data-wow-duration=1s data-wow-delay=0.6s>
+                                <img class=lazy src="assets/img/steps/one.svg" alt="one">
+                            </div>
+                            <div class="content-box steps-content-box wow fadeInDown" data-wow-duration=0.5s data-wow-delay=1.5s>
+                                <p>Подайте заявку на обучение</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mobile-three_steps-section ">
+                    <div class="mobile-three_steps_img wow bounceInRight" data-wow-duration=1s data-wow-delay=0s>
+                        <img class=lazy src="assets/img/steps/one.svg" alt="one">
+                    </div>
+                    <div class="mobile-three_steps_text wow fadeInUp" data-wow-duration=0.5s data-wow-delay=0.5s>
+                        <p>Подайте заявку на обучение.</p>
+                    </div>
+                    <div class="mobile-three_steps_img wow bounceInRight" data-wow-duration=1s data-wow-delay=0s>
+                        <img class=lazy src="assets/img/steps/two.svg" alt="two">
+                    </div>
+                    <div class="mobile-three_steps_text wow fadeInUp" data-wow-duration=0.5s data-wow-delay=0.5s>
+                        <p>Ваш личный менеджер обучения организует вводный урок</p>
+                    </div>
+                    <div class="mobile-three_steps_img wow bounceInRight" data-wow-duration=1s data-wow-delay=0s>
+                        <img class=lazy src="assets/img/steps/three.svg" alt="three">
+                    </div>
+                    <div class="mobile-three_steps_text wow fadeInUp" data-wow-duration=0.5s data-wow-delay=0.5s>
+                        <p>Репетитор подготовит персональный план обучения</p>
+                    </div>
+                    <div class="mobile-three_steps_img wow bounceInRight" data-wow-duration=1s data-wow-delay=0s>
+                        <img class=lazy src="assets/img/steps/four.svg" alt="four">
+                    </div>
+                    <div class="mobile-three_steps_text wow fadeInUp" data-wow-duration=0.5s data-wow-delay=0.5s>
+                        <p>Система подберет для вас репетитора мечты</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!--STEPS SECTION END-->
+
+
+<!--PRICE SECTION START-->
+<section class="sectionIM">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="price-main-title">
+                    <h2>Стоимость курса</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="price-item">
+                    <div class="price-item-title">
+                        <h3>Индивидуальные занятия</h3>
+                    </div>
+                    <div class="price-item-text">
+                        <ul>
+                            <li><img src="assets/img/prices/star-1.svg" alt="star">8 занятий <span>250 грн/урок</span> <br> <span>2 000 грн</span>/пакет</li>
+                            <li><img src="assets/img/prices/star-2.svg" alt="star">16 занятий <span>230 грн</span>/урок <br> <span>3 680 грн</span>/пакет</li>
+                            <li><img src="assets/img/prices/star-3.svg" alt="star">24 занятия <span>220 грн</span>/урок <br> <span>5 280 грн</span>/пакет</li>
+                            <li><img src="assets/img/prices/star-4.svg" alt="star">48 занятия <span>200 грн</span>/урок <br> <span>9 600 грн</span>/пакет</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="price-item">
+                    <div class="price-item-title">
+                        <h3>Групповые <br> занятия </h3>
+                    </div>
+                    <div class="price-item-text">
+                        <ul>
+                            <li><img src="assets/img/prices/star-1.svg" alt="star">8 занятий <span>1 520 грн</span>/пакет <br> Цена за урок <span>190 грн</span></li>
+                            <li><img src="assets/img/prices/star-2.svg" alt="star">16 занятий <span>2 880 грн</span>/пакет <br> Цена за урок <span>180 грн</span></li>
+                            <li><img src="assets/img/prices/star-3.svg" alt="star">24 занятия <span>3 840 грн</span>/пакет <br> Цена за урок <span>160 грн</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="price-item">
+                    <div class="price-item-title">
+                        <h3>Подготовка к экзаменам</h3>
+                    </div>
+                    <div class="price-item-text">
+                        <ul>
+                            <li><img src="assets/img/prices/star-1.svg" alt="star">8 занятий <span>270 грн</span>/урок <br> <span>2 160 грн</span>/пакет</li>
+                            <li><img src="assets/img/prices/star-2.svg" alt="star">16 занятий <span>250 грн</span>/урок <br> <span>4 000 грн</span>/пакет</li>
+                            <li><img src="assets/img/prices/star-3.svg" alt="star">24 занятия <span>230 грн</span>/урок <br> <span>5 520 грн</span>/пакет</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="price-main-footer">
+                    <h3>Основные правила предоставления услуг школы ComeStudy:</h3>
+                    <ol>
+                        <li>При комплексной подготовке к поступлению в университет
+                            с «ComeStudy», языковой курс включен в цену и дополнительно
+                            не оплачивается.</li>
+                        <li>Расписание уроков с преподавателем осуществляется на 1 месяц
+                            ( 4 недели). Переносы и отмены обсуждаются с персональным менеджером
+                            или самим преподавателем.</li>
+                        <li>Бесплатная отмена запланированного урока словацкого по инициативе клиента
+                            осуществляется минимум за 3 часа до его начала.</li>
+                        <li>Преподаватель имеет право переносить занятия (в случае болезни и по другим уваж
+                            ительным причинам), предупредив об этом Клиента не менее, чем за 24 часа.</li>
+                        <li>Замена преподавателя осуществляется бесплатно.</li>
+                        <li>Оказание услуг осуществляется на основе 100% предоплаты.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--PRICE SECTION END-->
+
+
+<!--FIRST FORM SECTION START-->
+<section class="contact_form_section first-form-section sectionIM">
+    <div class="container-fluid big_padding">
+        <div class="row">
+            <div class="content first-form-wrapper">
+                <div class="row">
+                    <form method="POST" class="mail_send_form first-form" action="javascript:void(null);" autocomplete="on">
+                        <h2>Записывайтесь на первый бесплатный урок</h2>
+                        <div class="col-md-6">
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/meeting.svg" alt="meeting">
+                                <p>Познакомимся</p>
+                            </div>
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/levels.svg" alt="levels">
+                                <p>Определим уровень</p>
+                            </div>
+                            <div class="first-form-about_item">
+                                <img src="assets/img/first-form/teacher.svg" alt="teacher">
+                                <p>Покажем как проходит урок</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <p>
+                                <select class="js-example-basic-multiple" name="" multiple="multiple">
+                                    <option value="prep">Подготовка к поступлению в университет</option>
+                                    <option value="work">Для работы в Словакии</option>
+                                    <option value="prep">Подготовка к переезду</option>
+                                    <option value="other" id="first-form-otherItem">Другое</option>
+                                </select>
+                            </p>
+                            <p class="first-form_textarea-wrapper">
+                                <textarea class="first-form_textarea" placeholder="Цель обучения"></textarea>
+                            </p>
+
+
+                            <p>
+                                <span class="required">*</span>
+                                <input type="text" placeholder="Имя" name="name" value="" required="">
+                            </p>
+                            <p>
+                                <span class="required">*</span>
+                                <input type="tel" placeholder="Телефон." name="phone" value="" pattern="^(\+38)[0-9]{10}" required="" oninvalid="this.setCustomValidity('введите телефон в формате +380XXXXXXXXX')" oninput="this.setCustomValidity('')">
+                            </p>
+                            <p>
+                                <input type="email" placeholder="Ваш email." name="email" value="">
+                            </p>
+                            <p>
+                                <input type="text" placeholder="Промокод" maxlength="8" name="promo_cod" value="" class="promocod">
+                            </p>
+                            <div class="promo_alert_false alert alert-danger text-center hide" role="alert">
+                                Промокод введен неверно :(
+                            </div>
+                            <div class="promo_alert_true alert alert-success text-center hide" role="alert">
+                                Ваша скидка <span class="discount"> </span> €
+                            </div>
+                            <p class="indication first-form-indication">
+                                <span style="color: #E5224C;"> * </span>Поле обязательно.</p>
+                            <p class="indication first-form-indication">
+                                <span style="color: #E5224C;"> ** </span>Оставляя заявку, вы принимаете условия соглашения.</p>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FIRST FORM SECTION EDN-->
+
+
+
+
+
+<script src="https://comestudy.com.ua/js/jquery-2.x-git.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="https://comestudy.com.ua/js/jquery.appear.min.js "></script>
+<script type="text/javascript" src="https://comestudy.com.ua/js/swiper.min.js"></script>
+<script type="text/javascript" src="https://comestudy.com.ua/js/script.js"></script>
+<script src="assets/js/js.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
