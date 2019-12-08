@@ -3699,7 +3699,7 @@ and (orientation : landscape) {
     margin-right: 1.5rem;
 }
 .first-form-about_item:first-child {
-    margin-top: 0.2rem;
+    margin-top: 0.4rem;
 }
 .first-form-about_item:last-child {
     margin-bottom: 3rem;
@@ -3851,23 +3851,6 @@ and (orientation : landscape) {
 }
 .select2-results__option:last-child[aria-selected=true] .first-form_textarea-wrapper {
     display: block;
-}
-
-
-@media (max-width: 992px) {
-    .first-form {
-        padding-left: 0;
-    }
-    .first-form-about_item {
-        margin-right: 0;
-    }
-    .first-form p {
-        padding-left: 0;
-    }
-    .first-form-about_item p:before {
-        width: 14vw;
-        left: -14vw;
-    }
 }
 /*FIRST FORM SECTION END*/
 

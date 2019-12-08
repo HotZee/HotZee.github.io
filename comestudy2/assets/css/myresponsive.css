@@ -1,0 +1,83 @@
+/*FIRST FORM SECTION START*/
+@media (max-width: 992px) {
+    .first-form {
+        padding-left: 0;
+    }
+    .first-form-about_item {
+        margin-right: 0;
+    }
+    .first-form p {
+        padding-left: 0;
+    }
+    .first-form-about_item p:before {
+        width: 14vw;
+        left: -14vw;
+    }
+    .first-form-about_item img {
+        border: rgb(178, 73, 104) 2px solid;
+        width: 8vw;
+    }
+    .first-form-about_item p {
+        border: rgb(178, 73, 104) 2px solid;
+        font-size: calc( (100vw - 32rem)/(99.2 - 32) * (1.8 - 1.2) + 1.2rem);
+    }
+    .first-form-about_item p:before {
+        height: 0.3rem;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .first-form-section .first-form-wrapper {
+        margin: 5vw auto;
+        width: 80%;
+        padding: 5vw;
+    }
+    .first-form-about_item p:before {
+        width: 15vw;
+        left: -15vw;
+    }
+    .first-form-about_item>p {
+        padding-left: 1rem;
+    }
+    .first-form-about_item img {
+        width: 13vw;
+    }
+    .contact_form_section textarea:not([type="submit"]) {
+        height: calc(0.2rem + 7vw);
+    }
+}
+@media (max-width: 500px) {
+    .first-form-about_item>p {
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    .select2-selection.select2-selection--multiple {
+        width: 87%!important;
+        margin: 0 auto;
+    }
+    .first-form-about_item p:before {
+        width: 16vw;
+        left: -16vw;
+    }
+    .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+        text-align: left;
+    }
+    .first-form-about_item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .first-form-about_item p {
+        right: 1rem;
+    }
+    .input-submit {
+        width: 87%!important;
+        display: block;
+        margin: 0.5rem auto 1rem auto;
+    }
+    .contact_form_section textarea:not([type="submit"]) {
+        width: 87%;
+        margin: 0 auto;
+        height: calc(0.2rem + 10vw);
+    }
+}
+/*FIRST FORM SECTION END*/
