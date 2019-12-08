@@ -2309,7 +2309,7 @@ body.pushmenu-push-toLeft {
     background-color: #ffffff;
     border-radius: 1rem;
     overflow: hidden;
-    padding: 5rem;
+    padding: calc( (100vw - 99.2rem)/(198 - 99.2) * (5 - 3) + 3rem);
 }
 
 .feedback_section .feedback_title {
@@ -2332,7 +2332,7 @@ body.pushmenu-push-toLeft {
 }
 
 .feedback_slider {
-    padding: 5rem;
+    padding: calc( (100vw - 99.2rem)/(198 - 99.2) * (5 - 1) + 1rem);
 }
 
 .feedback_section .quote_pic {
@@ -2354,7 +2354,7 @@ body.pushmenu-push-toLeft {
 .feedback_section .feedback_name {
     margin-top: 2rem;
     color: black;
-    font-size: 2rem;
+    font-size: calc( (100vw - 99.2rem)/(198 - 99.2) * (2 - 1.5) + 1.5rem);
 }
 
 .feedback_section .feedback_social {
@@ -3894,7 +3894,7 @@ and (orientation : landscape) {
 }
 .arguments-item p {
     margin: 0;
-    font-size: 24px;
+    font-size: calc( (100vw - 99.2rem)/(198 - 99.2) * (2.4 - 1.8) + 1.8rem);
     padding-left: 3rem;
 }
 .arguments-item img {
@@ -3928,15 +3928,15 @@ and (orientation : landscape) {
     text-align: center;
 }
 .consider_descr h3 img {
-    width: 7rem;
+    width: calc( (100vw - 99.2rem)/(198 - 99.2) * (7 - 5) + 5rem);
     margin-right: 2rem;
 }
 .consider_descr h3 span {
     color: rgb(207, 104, 58);
-    font-size: 4.6rem;
+    font-size: calc( (100vw - 99.2rem)/(198 - 99.2) * (4.6 - 3) + 3rem);
 }
 .consider_descr p {
-    font-size: 3.6rem;
+    font-size: calc( (100vw - 99.2rem)/(198 - 99.2) * (3.6 - 2) + 2rem);
     text-align: center;
 }
 /*CONSIDER-OF SECTION END*/
@@ -4028,7 +4028,7 @@ and (orientation : landscape) {
 }
 .price-item-text img {
     position: absolute;
-    left: -2vw;
+    left: -4rem;
     width: 4rem;
     z-index: 1;
 }

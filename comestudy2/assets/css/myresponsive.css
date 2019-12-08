@@ -44,6 +44,9 @@
     .contact_form_section textarea:not([type="submit"]) {
         height: calc(0.2rem + 7vw);
     }
+    .first-form-inputsWrapper {
+        padding-bottom: 2rem;
+    }
 }
 @media (max-width: 500px) {
     .first-form-about_item>p {
@@ -79,5 +82,113 @@
         margin: 0 auto;
         height: calc(0.2rem + 10vw);
     }
+    .first-form-inputsWrapper {
+        padding-bottom: 1rem;
+    }
 }
 /*FIRST FORM SECTION END*/
+
+
+/*ARGUMENTS SECTION START*/
+@media (max-width: 992px) {
+    .arguments {
+        border-right: none;
+    }
+
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .arguments h2 {
+        font-size: calc(0.1rem + 5.5vw);
+    }
+    .feedback_section .feedback_title {
+        margin-bottom: 0;
+    }
+    .arguments-item {
+        padding: 1rem;
+    }
+    .feedaback_inner {
+        margin-top: 2rem;
+    }
+    .feedback_text {
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    .arguments-item {
+        padding: 0.5rem;
+    }
+}
+/*ARGUMENTS SECTION END*/
+
+
+/*CONSIDER-OF SECTION START*/
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .consider_descr h3 span {
+        font-size: calc( (100vw - 32rem)/(76.7 - 32) * (4 - 2.5) + 2.5rem);
+    }
+    .consider_descr {
+        font-size: calc(0.2rem + 4vw);
+    }
+    .consider_descr h3 img {
+        width: calc( (100vw - 32rem)/(76.7 - 32) * (6 - 4) + 4rem);
+    }
+}
+@media (max-width: 450px) {
+    .consider_descr h3 img {
+        margin-right: 1rem;
+    }
+}
+/*CONSIDER-OF SECTION END*/
+
+
+/*SECOND FORM SECTION START*/
+@media (max-width: 992px) {
+    .second-form p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .second-form-image-wrapper {
+        display: none;
+    }
+    .second-form-inputs-wrapper {
+        padding-top: 0;
+    }
+}
+/*SECOND FORM SECTION END*/
+
+
+/*PRICE SECTION START*/
+@media (max-width: 992px) {
+    .price-item {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    .price-item {
+        width: 60%;
+        margin: 0 auto 1rem auto;
+    }
+}
+@media (max-width: 550px) {
+    .price-item {
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .price-item {
+        width: 100%;
+    }
+}
+/*PRICE SECTION END*/
+
+
+
+
+
+
+
+
+
+
+
