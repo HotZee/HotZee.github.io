@@ -19,7 +19,7 @@
 
 
 /*BENEFIT SECTION START*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .benefit-item p {
         font-size: calc(0.2rem + 1.8vw);
         line-height: calc(0.2rem + 2vw);
@@ -37,6 +37,12 @@
     .benefit-item p {
         font-size: calc(0.2rem + 3.8vw);
         line-height: calc(0.2rem + 4vw);
+    }
+}
+@media (max-width: 768px) and (min-width: 768px) {
+    .benefit-item {
+        width: 22%;
+        display: inline-table;
     }
 }
 /*BENEFIT SECTION END */
@@ -252,6 +258,11 @@
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .three_steps-article .steps-content-box {
         height: 7rem;
+    }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+    .steps-section {
+        background-position: right;
     }
 }
 /*STEPS SECTION END*/
