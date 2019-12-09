@@ -33,6 +33,12 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    .benefit-item p {
+        font-size: calc(0.2rem + 3.8vw);
+        line-height: calc(0.2rem + 4vw);
+    }
+}
 /*BENEFIT SECTION END */
 
 /*FIRST FORM SECTION START*/
@@ -243,8 +249,10 @@
         left: 50%;
     }
 }
-@media screen and (max-width: 920px) and (orientation: landscape) {
-
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .three_steps-article .steps-content-box {
+        height: 7rem;
+    }
 }
 /*STEPS SECTION END*/
 
@@ -263,6 +271,12 @@
         min-height: 2rem;
         width: 50%;
         margin: 0 auto 1rem auto;
+    }
+    .price-main-title {
+        margin-bottom: 1rem;
+    }
+    .price-main-footer {
+        margin-top: 0;
     }
 }
 @media (max-width: 767px) {
