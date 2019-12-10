@@ -3563,21 +3563,21 @@ and (orientation : landscape) {
     border-radius: 1.8rem;
     border: 3px solid #008cba;
     border: 3px solid var(--blue-color);
-    width: 141rem;
+    width: 80vw;
 }
 .main-banner-title-second h1 {
     margin: 0;
-    font-size: calc( (100vw - 32rem)/(198 - 32) * (4 - 2.5) + 2.5rem);
+    font-size: calc( (100vw - 32rem)/(198 - 32) * (4 - 1.5) + 1.5rem)
 }
 .main-banner-title-second h1 span {
     color: #008cba;
-    font-size: 7rem;
+    font-size: calc( (100vw - 32rem)/(198 - 32) * (7 - 3) + 3rem);
     display: block;
     margin-top: 2rem;
 }
 .main-banner-title-second h2 {
     margin: calc( (100vw - 32rem)/(198 - 32) * (5 - 2) + 2rem) 0 0 0;
-    font-size: calc( (100vw - 32rem)/(198 - 32) * (3.3 - 2) + 2rem);
+    font-size: calc( (100vw - 32rem)/(198 - 32) * (3.3 - 1) + 1rem)
 }
 /*MAIN SECTION END*/
 

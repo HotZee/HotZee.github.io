@@ -1,5 +1,9 @@
 /*MAIN SETTINGS START*/
-
+@media (orientation: portrait) {
+    .sectionFirst-secondPage {
+        background-position: 96%;
+    }
+}
 @media (max-width: 992px) {
     .sectionIM {
         padding: 6rem 0;
