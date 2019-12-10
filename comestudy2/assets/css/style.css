@@ -3558,23 +3558,26 @@ and (orientation : landscape) {
     left: 50%;
     transform: translate(-50%, -15%);
     text-align: center;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);;
     padding: calc( (100vw - 32rem)/(198 - 32) * (6 - 2) + 2rem);
     border-radius: 1.8rem;
     border: 3px solid #008cba;
     border: 3px solid var(--blue-color);
+    width: 141rem;
 }
 .main-banner-title-second h1 {
     margin: 0;
-    font-size: calc( (100vw - 32rem)/(198 - 32) * (3.6 - 2.5) + 2.5rem);
+    font-size: calc( (100vw - 32rem)/(198 - 32) * (4 - 2.5) + 2.5rem);
 }
 .main-banner-title-second h1 span {
     color: #008cba;
-    font-weight: bold;
+    font-size: 7rem;
+    display: block;
+    margin-top: 2rem;
 }
 .main-banner-title-second h2 {
     margin: calc( (100vw - 32rem)/(198 - 32) * (5 - 2) + 2rem) 0 0 0;
-    font-size: calc( (100vw - 32rem)/(198 - 32) * (3 - 2) + 2rem);
+    font-size: calc( (100vw - 32rem)/(198 - 32) * (3.3 - 2) + 2rem);
 }
 /*MAIN SECTION END*/
 
