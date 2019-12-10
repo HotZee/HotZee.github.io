@@ -81,6 +81,14 @@ $(function () {
                     fontStyle: 'normal'
                 }
             );
+        // $("#pa_billSchedule").select2({
+        //     data: [
+        //         {id: 1, text: 'first', customData: 'red'},
+        //         {id: 2, text: 'second', customData: 'green'},
+        //         {id: 3, text: 'third', customData: 'blue'},
+        //         {id: 4, text: 'fourth', customData: 'blue'}
+        //     ]
+        // });
         $('.select2-selection').css({
             'width': '100%',
             'border-radius': '2px',
@@ -95,13 +103,14 @@ $(function () {
 
         $('.js-example-basic-multiple').on('change', function() {
             var last = $(this).find('option').last().val();
-            if ($(this).val() == last) {
+            if ($(this).val().includes("other")) {
                 $('.first-form_textarea-wrapper').addClass('active');
             }
             else {
                 $('.first-form_textarea-wrapper').removeClass('active');
             }
         });
+
     });
 
 

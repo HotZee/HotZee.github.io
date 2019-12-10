@@ -3764,8 +3764,8 @@ and (orientation : landscape) {
     text-align: left;
     margin-bottom: 0;
 }
-.select2-results__option:last-child[aria-selected=true] .first-form_textarea-wrapper {
-    display: block;
+.select2-selection__choice[title="Другое"] .first-form_textarea-wrapper.active {
+    background: red;
 }
 /*FIRST FORM SECTION END*/
 
