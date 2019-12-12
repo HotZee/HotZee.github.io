@@ -6,6 +6,7 @@
     <meta name="description" content="Доставка суши и роллов в Киеве. Заказать доставку блюд японской кухни домой или в офис. Бесплатная доставка суши Киев от Tainabox. Заказывайте на сайте онлайн. Акции и скидки.">
     <title>Роллы - TainaBox</title>
     <link rel="canonical" href="https://tainabox.com.ua/rolly">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <!--В ОСНОВНОЙ СТРАНИЦЕ-->
     <!--<link rel="amphtml" href="https://www.example.com/url/to/amp/document.html">-->
@@ -390,15 +391,22 @@
     }
     .product-item {
       background: #ffffff;
-      border-radius: 20px;
-      width: 90%;
+      border-radius: 8px;
+      width: 100%;
       text-align: left;
-      padding: 10px;
       margin: 10px auto;
+      position: relative;
+    }
+    .product-item>a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
     }
     .product-item__content {
       display: flex;
       flex-direction: column;
+      padding: 0 10px;
     }
     .product-item__img {
       border-top-left-radius: 20px;
@@ -414,6 +422,10 @@
       color: #000;
       line-height: 23px;
       padding: 20px 0;
+    }
+    .product-item__name span {
+      color: #616161;
+      font-size: 16px;
     }
     .product-item__composition {
       color: rgba(0, 0, 0, 0.4);
@@ -431,9 +443,10 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 2px;
+      padding: 0 10px 10px 10px;
     }
     .to-order__value {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 40px;
       color: #BE0530;
       display: flex;
@@ -449,6 +462,19 @@
       font-weight: 300;
       font-family: sans-serif;
       padding: 8px 25px;
+    }
+    amp-img {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+    .new-product {
+      background: #099e00;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px;
+      border-top-left-radius: 8px;
+      position: absolute;
+      z-index: 1;
     }
     /*PRODUCT END*/
 
@@ -543,7 +569,7 @@
       background: #be0530;
       position: sticky;
       width: 100%;
-      z-index: 1;
+      z-index: 11;
       top: 0;
     }
     .header__mid-menu {
@@ -572,12 +598,6 @@
       color: #333;
       font-size: 16px;
     }
-    .sample-sidebar {
-      width: 240px;
-      background: #ffffff;
-      margin-top: 60px;
-    }
-    /*NAVBAR END*/
 
 
     .headerbar {
@@ -591,6 +611,10 @@
     .hamburger {
       padding: 18px 15px 18px 15px;
       fill: #fff;
+      cursor: pointer;
+    }
+    .hamburger:focus {
+      outline: none;
     }
     .site-name {
       padding: 0;
@@ -670,8 +694,13 @@
     }
 
 
-
-
+    .free-zone-min p{
+      margin: 0;
+      text-align: center;
+      font-size: 18px;
+      color: black;
+    }
+    /*NAVBAR END*/
 
     /*TOPLINE START*/
     .topline-wrapper {
@@ -686,10 +715,14 @@
     .topline-phone p a {
       font-size: 16px;
       color: #333333;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
       text-decoration: none;
+      padding-left: 28px;
+    }
+    .topline-phone p i {
+      font-size: 26px;
+      position: absolute;
+      top: 8px;
+      color: #333333;
     }
     .topline-times {
       font-size: 16px;
@@ -701,16 +734,122 @@
     /*TOPLINE END*/
 
 
+    /*FOOTER START*/
+    footer {
+      color: #ffffff;
+      background-image: url("https://tainabox.com.ua/img/footer-bg2.jpg");
+      background-size: cover;
+      position: relative;
+    }
+    footer:after {
+      content: "";
+      background: rgba(33, 33, 33, 0.4);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer-item {
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 5;
+    }
+    .footer-item__phones h4 {
+      font-size: 28px;
+      font-weight: normal;
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .footer-item__phones a {
+      font-size: 24px;
+      display: block;
+      line-height: 15px;
+    }
+    .footer-item__pages p {
+      margin: 12px 0;
+    }
+    .footer-item__shedule p {
+      font-size: 14px;
+    }
+    .footer-item__social {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      z-index: 11;
+      position: relative;
+      padding: 0;
+      margin-top: 0;
+    }
+    .footer-item__social li{
+      list-style: none;
+      background: #ffffff;
+      margin: 10px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      height: 65px;
+      width: 65px;
+      position: relative;
+    }
+    .footer-item__social li a {
+      cursor: pointer;
+      font-size: 36px;
+      margin: 17px;
+      color: #333;
+      text-align: center;
+    }
+    .footer-item__social li i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    ul.footer-item__social span {
+      display: inline-flex;
+    }
+    .footer-item__personal {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      font-size: 10px;
+      margin-bottom: 0;
+    }
+    .footer-item__adress {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .footer-item__adress a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+    /*FOOTER END*/
+
 
   </style>
   </head>
   <body>
+
 
   <!--TOPLINE SECTION START-->
   <section>
     <div class="topline-wrapper">
         <div class="topline-phone">
           <p>
+            <i class="fa fa-phone"></i>
             <a href="tel:+380679004341">(067) 900-43-41</a>
           </p>
         </div>
@@ -720,8 +859,6 @@
     </div>
   </section>
   <!--TOPLINE SECTION END-->
-
-
 
 
   <!--NAV START-->
@@ -744,31 +881,37 @@
 
       <div class="main-menu items" role="menu" aria-label="Menu links" [class]="hidePrimary ? 'main-menu items hide-parent' : 'main-menu items'">
         <ul class="header__mid-menu hidden-sm hidden-xs active-mob">
-        <li><a href="/lapsha">Лапша</a></li>
+        <li><a href="https://tainabox.com.ua/lapsha">Лапша</a></li>
 
-        <li><a class="olink" href="/ris">Рис</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/ris">Рис</a></li>
 
-        <li><a class="olink" href="/pasta">Паста</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/pasta">Паста</a></li>
 
-        <li><a href="/rolly">Роллы</a></li>
+        <li><a href="https://tainabox.com.ua/rolly">Роллы</a></li>
 
-        <li><a class="olink" href="/supy">Супы</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/supy">Супы</a></li>
 
-        <li><a class="olink" href="/salaty">Салаты</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/salaty">Салаты</a></li>
 
-        <li><a class="olink" href="/zakuski">Закуски</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/zakuski">Закуски</a></li>
 
-        <li><a class="olink" href="/sauce">Соусы</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/sauce">Соусы</a></li>
 
-        <li><a class="olink" href="/napitki">Напитки</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/napitki">Напитки</a></li>
 
-        <li><a class="olink" href="/vegetarianskoe-menu">Вегетарианское меню</a></li>
+        <li><a class="olink" href="https://tainabox.com.ua/vegetarianskoe-menu">Вегетарианское меню</a></li>
 
         </ul>
+        <div class="free-zone-min">
+          <p>Зона бесплатной доставки</p>
+          <a rel="nofollow" class="olink" href="https://tainabox.com.ua/map">
+            <amp-img class="free-zone-min-img" src="https://tainabox.com.ua/img/maps_new.png" height="171" width="238" layout="responsive"></amp-img>
+          </a>
+
+        </div>
       </div>
     </nav>
   </amp-sidebar>
-
   <header class="headerbar">
     <div class="hamburger" role="button" aria-label="mobile menu" on="tap:header-sidebar.toggle" tabindex="0">
 
@@ -788,10 +931,7 @@
     </div>
     <div class="site-name"><amp-img src="img/new_logo.png" height="120px" width="216px"></amp-img></div>
   </header>
-
   <!--NAV END-->
-
-
 
 
   <!--PRODUCT PAGE SECTION START-->
@@ -801,26 +941,25 @@
         <h1>Роллы. Доставка суши по Киеву.</h1>
         <div class="product-wrapper">
           <div class="product-item">
-          <div class="product-item__img">
-            <amp-img src="https://tainabox.com.ua/images/store/Products/Product152/a22798.jpg" height="250" width="250"></amp-img>
-          </div>
-          <div class="product-item__content">
-            <span class="product-item__name">Сет №2 "Никко"</span>
-            <span class="product-item__composition">Состав:</span>
-            <span class="product-item__composition__value">Сяке футо маки, филадельфия масаго каеси, калифорния унаги, васаби, имбирь.</span>
-          </div>
-          <div class="to-order__wrapper">
-            <div class="to-order__value"><strike>360.00
-            </strike>324.00
+            <a href="https://tainabox.com.ua/discount/50-na-kazhdoe-vtoroe-blyudo"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Discounts/Discounts7/e13a8d.jpg" height="300" width="300" layout="responsive"></amp-img>
             </div>
-            <div class="order-button">
+            <div class="product__item__content" style="padding: 20px;">
+              <div class="dish-content">
+                <h3 class="dish-title" style="font-size: 22px;margin-top: 2%; margin-bottom: 10px; text-align:center; color: #616161;">-50% на каждое второе блюдо!*</h3>
+                <p class="dish-desc" style="font-size: 14px;margin-top: 1%;text-align:center; color: #616161;">Приятная скидка для всех новых клиентов.</p>
+              </div>
+            </div>
+            <div class="order-button" style="text-align: center; margin-bottom: 20px;">
               <button class="to-order__button">Заказать</button>
             </div>
           </div>
-        </div>
+
           <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/set-2-nikko"></a>
             <div class="product-item__img">
-              <amp-img src="img/product-item1.jpg" height="250" width="250"></amp-img>
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product152/a22798.jpg" height="300" width="300" layout="responsive"></amp-img>
             </div>
             <div class="product-item__content">
               <span class="product-item__name">Сет №2 "Никко"</span>
@@ -837,17 +976,18 @@
             </div>
           </div>
           <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/set-3-kyoto"></a>
             <div class="product-item__img">
-              <amp-img src="img/product-item1.jpg" height="250" width="250"></amp-img>
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product153/c3c702.jpg" height="300" width="300" layout="responsive"></amp-img>
             </div>
             <div class="product-item__content">
-              <span class="product-item__name">Сет №2 "Никко"</span>
+              <span class="product-item__name">Сет №3 "Киото"</span>
               <span class="product-item__composition">Состав:</span>
-              <span class="product-item__composition__value">Сяке футо маки, филадельфия масаго каеси, калифорния унаги, васаби, имбирь.</span>
+              <span class="product-item__composition__value">Калифорния каеси, эби футо маки, филадельфия масаго сяке,филадельфия сяке, ...</span>
             </div>
             <div class="to-order__wrapper">
-              <div class="to-order__value"><strike>360.00
-              </strike>324.00
+              <div class="to-order__value"><strike>506.00
+              </strike>455.40
               </div>
               <div class="order-button">
                 <button class="to-order__button">Заказать</button>
@@ -855,17 +995,672 @@
             </div>
           </div>
           <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/set-1-osaka"></a>
             <div class="product-item__img">
-              <amp-img src="img/product-item1.jpg" height="250" width="250"></amp-img>
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product151/90f209.jpg" height="300" width="300" layout="responsive"></amp-img>
             </div>
             <div class="product-item__content">
-              <span class="product-item__name">Сет №2 "Никко"</span>
+              <span class="product-item__name">Сет №1 "Осака"</span>
               <span class="product-item__composition">Состав:</span>
-              <span class="product-item__composition__value">Сяке футо маки, филадельфия масаго каеси, калифорния унаги, васаби, имбирь.</span>
+              <span class="product-item__composition__value">Калифорния сяке, каеси футо маки, филадельфия сяке, васаби, имбирь.</span>
             </div>
             <div class="to-order__wrapper">
-              <div class="to-order__value"><strike>360.00
-              </strike>324.00
+              <div class="to-order__value"><strike>380.00
+              </strike>342.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-syake-spaysi"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product156/98490c.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия сяке спайси <br>
+                <span>с лососем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, свежий лосось, зеленый лук, омлет тамаго, спайси соус, сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                143.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-unagi-spaysi"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product157/964b07.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия унаги спайси<br>
+                <span>с угрем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, угорь, зеленый лук, омлет тамаго, спайси соус, сыр сливочный ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                160.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-maksi-syake"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product158/f2fcec.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия макси сяке<br>
+                <span>с лососем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, свежий лосось, сыр сливочный "Филадельфия", 8 ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                233.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-syake"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product58/9a92dc.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия сяке<br>
+                <span>с лососем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, свежий лосось, сыр сливочный "Филадельфия", 8 ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                160.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/zolotoy-drakon"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product173/f1d673.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Золотой дракон<br>
+                <span>с лососем и угрем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сливочный сыр Филадельфия,   лосось, икра масаго, огурец, ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                245.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/cheese-roll"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product49/3417c5.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Чиз ролл<br>
+                <span>сырный ролл&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, сыр сливочный "Филадельфия", сыр твердый, сыр тостовый ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                116.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-tori-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product62/88b330.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки тори маки<br>
+                <span>запеченний с курицей&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                124.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-kaesi-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product89/b4b93a.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки каеси маки<br>
+                <span>с мидией&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                128.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-masago-unagi"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product160/39d31d.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия масаго унаги<br>
+                <span>с угрем в икре&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, угорь, сыр сливочный "Филадельфия", икра ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                150.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/krasnyiy-drakon"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product172/b8f9a5.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Красный дракон<br>
+                <span>с лососем и тунцом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сливочный сыр Филадельфия,  огурец, лосось, тунец, 8 ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                248.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-unagi"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product171/3c538b.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия унаги<br>
+                <span>с угрем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, угорь, сыр сливочный "Филадельфия", 8 ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                196.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-maguro-maki"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product155/8bab82.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки магуро маки<br>
+                <span>с тунцом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                146.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-kaesi-kani-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product91/8570a7.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки каеси кани маки<br>
+                <span>с мидией и крабом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", мидии, мясо ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                126.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-masago-maguro"></a>
+            <div class="new-product">НОВИНКА</div>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product170/3a8128.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия масаго магуро<br>
+                <span>с тунцом в икре&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, свежий тунец, сыр сливочный "Филадельфия", икра ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                142.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/ebi-futo-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product52/b28e7f.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Эби футо маки<br>
+                <span>с креветкой и острым соусом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, сыр сливочный "Филадельфия, креветка коктейльная, ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                114.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-ebi-kani-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product94/285e5c.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки эби кани маки<br>
+                <span>с креветкой и крабом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                130.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-masago-ebi"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product59/fd3b7f.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия масаго эби<br>
+                <span>с креветкой в икре&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, креветка коктейльная, сыр сливочный "Филадельфия", ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                130.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-ebi-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product64/330fcf.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки эби маки<br>
+                <span>с креветкой&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                132.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-masago-syake"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product60/5e0d7e.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия масаго сяке<br>
+                <span>с лососем в икре&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, свежий лосось, сыр сливочный "Филадельфия", икра ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                136.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/syake-futo-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product53/8332e5.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Сяке футо маки<br>
+                <span>с лососем и острым соусом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, сыр сливочный "Филадельфия", свежий лосось, сладкий ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                120.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/californiya-syake"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product56/f6ef53.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Калифорния сяке<br>
+                <span>с лососем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, свежий лосось, мясо краба, семена кунжута, яки ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                112.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-syake-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product63/726022.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки сяке маки<br>
+                <span>с лососем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                146.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/filadelfiya-masago-kaesi"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product61/761746.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Филадельфия масаго каеси<br>
+                <span>с мидией в икре&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, мидии, сыр сливочный "Филадельфия", икра ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                120.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-syake-kani-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product92/b1a74b.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки сяке кани маки<br>
+                <span>с лососем и крабом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", лосось, ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                144.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/unagi-futo-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product55/1906dc.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Унаги футо маки<br>
+                <span>с угрем и острым соусом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, сыр сливочный "Филадельфия", угорь, сладкий омлет ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                132.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-unagi-kani-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product93/1f3fe2.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки унаги кани маки<br>
+                <span>с угрем и крабом&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", угорь, мясо ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                160.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/californiya-unagi"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product57/b49f2a.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Калифорния унаги<br>
+                <span>с угрем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, огурец, угорь, мясо краба, семена кунжута, яки соус. Комплект: ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                120.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/yaki-unagi-maki"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product90/00c35f.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Яки унаги маки<br>
+                <span>с угрем&nbsp;</span>
+              </span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Суши рис, нори, сладкий омлет тамаго, сыр сливочный "Филадельфия", сыр ...</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                164.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/wasabi"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product161/689f93.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Васаби</span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Острый японский хрен.</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                4.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/sous-soevui"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product164/d2c087.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Соус соевый</span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Соус соевый.</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                8.00
+              </div>
+              <div class="order-button">
+                <button class="to-order__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <a href="https://tainabox.com.ua/rolly/imbir"></a>
+            <div class="product-item__img">
+              <amp-img src="https://tainabox.com.ua/images/store/Products/Product162/66272b.jpg" height="300" width="300" layout="responsive"></amp-img>
+            </div>
+            <div class="product-item__content">
+              <span class="product-item__name">Имбирь</span>
+              <span class="product-item__composition">Состав:</span>
+              <span class="product-item__composition__value">Маринованный имбирь.</span>
+            </div>
+            <div class="to-order__wrapper">
+              <div class="to-order__value">
+                4.00
               </div>
               <div class="order-button">
                 <button class="to-order__button">Заказать</button>
@@ -1115,6 +1910,52 @@
     </div>
   </section>
   <!--ADVANTAGE SECTION END-->
+
+
+  <!--FOOTER START-->
+  <footer itemscope itemtype="http://schema.org/Organization">
+      <div class="footer-item__phones footer-item">
+        <h4>Оформить заказ:</h4>
+        <a href="tel:+380679004341"><span itemprop="telephone">+38(067) 900-43-41</span></a>
+        <br>
+        <a href="tel:+380739004341"><span itemprop="telephone">+38(073) 900-43-41</span></a>
+      </div>
+      <div class="footer-item__pages footer-item">
+        <p><a class="olink" href="https://tainabox.com.ua/menu">Меню</a></p>
+        <p><a class="olink" rel="nofollow" href="https://tainabox.com.ua/about">О нас</a></p>
+        <p><a class="olink" rel="nofollow" href="https://tainabox.com.ua/map">Доставка и оплата</a></p>
+        <p><a class="olink" rel="nofollow" href="https://tainabox.com.ua/discount">Акции</a></p>
+        <p><a class="olink" rel="nofollow" href="https://tainabox.com.ua/contacts">Контакты</a>
+        </p>
+      </div>
+      <div class="footer-item__shedule footer-item">
+        <h4>График работы:</h4>
+        <p>ПН-ВС 10:00-22:00</p>
+      </div>
+      <ul class="footer-item__social">
+					<span>
+					<link itemprop="url" href="https://tainabox.com.ua">
+
+					<li><a class="olink" itemprop="sameAs" rel="nofollow" target="_blank" href="https://www.instagram.com/taina_box/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="olink" itemprop="sameAs" rel="nofollow" target="_blank" href="https://www.facebook.com/tainainbox/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="mailto:Tainabox17@gmail.com"><i class="fa fa-envelope"></i></a></li>
+					</span>
+      </ul>
+      <div class="footer-item__adress">
+        <div class="adress">
+          <div class="adress_name" itemprop="name">Tainabox - доставка китайской еды в коробочках
+          </div>
+          <div class="adress_location" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+            <address><span itemprop="streetAddress">ул. Николая Гринченко 18</span>, <span itemprop="addressLocality">г. Киев, Украина</span>, <span itemprop="postalCode">03039</span></address>
+          </div>
+          <a href="https://tainabox.com.ua/food/lapsha-udon">Лапша удон</a> заказать доставку в Киеве.<br><a href="https://tainabox.com.ua/food/roll-filadelfiya">Заказать роллы филадельфия</a> доставка еды
+        </div>
+      </div>
+      <p class="footer-item__personal">Оформляя заказ Вы даете согласие на обработку персональных данных</p>
+  </footer>
+  <!--FOOTER END-->
+
+
 
 
   </body>
