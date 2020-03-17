@@ -1,4 +1,24 @@
-
+<?php
+session_start();
+if (!isset($_SESSION['utms'])) {
+	$_SESSION['utms'] = array();
+	$_SESSION['utms']['utm_source'] = '';
+	$_SESSION['utms']['utm_medium'] = '';
+	$_SESSION['utms']['utm_term'] = '';
+	$_SESSION['utms']['utm_content'] = '';
+	$_SESSION['utms']['utm_campaign'] = '';
+}
+$_SESSION['utms']['utm_source'] = $_GET['utm_source'];
+$_SESSION['utms']['utm_medium'] = $_GET['utm_medium'];
+$_SESSION['utms']['utm_term'] = $_GET['utm_term'];
+$_SESSION['utms']['utm_content'] = $_GET['utm_content'];
+$_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
+session_id();
+$newcena = 1099; // Цена со скидкой
+$valuta = "грн";
+$skidka = 53;  // Процент скидки
+$oldcena = floor(($newcena / (100 - $skidka)) * 100); // Считаем цену без скидки
+?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -129,13 +149,11 @@
 <!--				</div>-->
                 <div>
                     <select>
-                        <option value="0">Test 1</option>
-                        <option value="1">Test 2</option>
-                        <option value="2">Test 3</option>
-                        <option value="3" selected>Test 4</option>
-                        <option value="4">Test 5</option>
-                        <option value="5">Test 6</option>
-                        <option value="6">Test 7</option>
+                        <option value="Test 1">Test 1</option>
+                        <option value="Test 2">Test 2</option>
+                        <option value="Test 3" selected>Test 3</option>
+                        <option value="Test 4">Test 4</option>
+                        <option value="Test 5">Test 5</option>
                     </select>
                 </div>
 				<div class="radio-wrapper-size">
