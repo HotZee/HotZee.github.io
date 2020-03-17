@@ -1,24 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['utms'])) {
-	$_SESSION['utms'] = array();
-	$_SESSION['utms']['utm_source'] = '';
-	$_SESSION['utms']['utm_medium'] = '';
-	$_SESSION['utms']['utm_term'] = '';
-	$_SESSION['utms']['utm_content'] = '';
-	$_SESSION['utms']['utm_campaign'] = '';
-}
-$_SESSION['utms']['utm_source'] = $_GET['utm_source'];
-$_SESSION['utms']['utm_medium'] = $_GET['utm_medium'];
-$_SESSION['utms']['utm_term'] = $_GET['utm_term'];
-$_SESSION['utms']['utm_content'] = $_GET['utm_content'];
-$_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
-session_id();
-$newcena = 1099; // Цена со скидкой
-$valuta = "грн";
-$skidka = 53;  // Процент скидки
-$oldcena = floor(($newcena / (100 - $skidka)) * 100); // Считаем цену без скидки
-?>
+
 <!doctype html>
 <html lang="ru">
 <head>
