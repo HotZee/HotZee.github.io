@@ -4,8 +4,8 @@ $('.sl_1').slick({
   prevArrow: $('.arrow-sl_left_1'),
   nextArrow: $('.arrow-sl_right_1'),
   arrows: true,
-  autoplay: true,
-  autoplaySpeed: 3000
+  autoplay: false
+  // autoplaySpeed: 3000
   // adaptiveHeight: true,
   // asNavFor: '.slider-nav-0'
 });
@@ -98,6 +98,7 @@ $(".ss").mask("380-99-999-9999");
 //     }
 //   }
 // }
+
 
 
 
@@ -297,7 +298,11 @@ $(".ss").mask("380-99-999-9999");
       this.angle = settings.theta * index;
       this.elem = document.createElement('figure');
       $(this.elem).addClass('a' + this.angle*100);
+      $(this.elem).addClass('a' + this.index);
+      $(this.elem).attr('data-option' , this.index);
+
       $(this.elem).css('opacity', '0.5');
+
       $(this.elem).css(
           settings.transformProp,
           settings.rotateFn + '(' + -this.angle + 'deg) translateZ(' + settings.radius + 'px)'
@@ -452,7 +457,14 @@ $(".ss").mask("380-99-999-9999");
         if (last_index != data.index && settings.onChange)
           settings.onChange(HTMLselect);
 
+          $("figure").removeClass("active");
         $(selected.elem).css("opacity", 1);
+        $(selected.elem).addClass("active");
+        var thisElementAttr = parseInt($(selected.elem).attr("data-option"));
+        $("#first").find(`[data-slick-index='${thisElementAttr}']`).addClass("slick-current slick-active");
+          $('.sl_1').slick('slickGoTo', thisElementAttr);
+
+
         $("figure:not(.a" + (selected.angle*100) + ", .hidden)", drum).css("opacity", "0.5");
         if (selected.angle != settings.last_angle && [0,90,180,270].indexOf(selected.angle) >= 0) {
           settings.last_angle = selected.angle;
@@ -460,6 +472,7 @@ $(".ss").mask("380-99-999-9999");
         }
       }
     };
+
     this.setIndex = function (dataindex) {
       var page = Math.floor(dataindex / settings.panelCount);
       var index = dataindex - (page * settings.panelCount);
@@ -513,7 +526,6 @@ $(".ss").mask("380-99-999-9999");
       });
     }
   };
-
   var methods = {
     getIndex : function () {
       if ($(this).data('drum'))
@@ -534,6 +546,7 @@ $(".ss").mask("380-99-999-9999");
       }
       if (transformProp) {
         var element = $(this);
+
         if (!element.data('drum')) {
           var drum = new Drum(element, options, transformProp);
           element.data('drum', drum);
@@ -555,6 +568,7 @@ $(".ss").mask("380-99-999-9999");
       }
     });
   };
+
 })(jQuery);
 
 $("select").drum();
