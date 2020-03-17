@@ -102,6 +102,9 @@ $(".ss").mask("380-99-999-9999");
 
 
 
+
+
+
 /*! Hammer.JS - v1.0.6dev - 2013-12-14
  * https://eightmedia.github.com/hammer.js
  *
@@ -380,13 +383,13 @@ $(".ss").mask("380-99-999-9999");
       var dialDown = DrumIcon.down(settings);
       $(wrapper).append(dialDown);
 
-      $(wrapper).hover(function () {
-        $(this).find(".up").show();
-        $(this).find(".down").show();
-      }, function () {
-        $(this).find(".up").hide();
-        $(this).find(".down").hide();
-      });
+      // $(wrapper).hover(function () {
+      //   $(this).find(".up").show();
+      //   $(this).find(".down").show();
+      // }, function () {
+      //   $(this).find(".up").hide();
+      //   $(this).find(".down").hide();
+      // });
     }
 
     settings.radius = Math.round( ( $(drum).height() / 2 ) / Math.tan( Math.PI / settings.panelCount ) );
@@ -446,10 +449,10 @@ $(".ss").mask("380-99-999-9999");
     };
     var transform = function() {
       $(drum).css(settings.transformProp, 'translateZ(-' + settings.radius + 'px) ' + settings.rotateFn + '(' + settings.rotation + 'deg)');
-
       var selected = getSelected();
       if (selected) {
         var data = selected.dataModel;
+
 
         var last_index = HTMLselect.selectedIndex;
         HTMLselect.selectedIndex = data.index;
@@ -458,11 +461,18 @@ $(".ss").mask("380-99-999-9999");
           settings.onChange(HTMLselect);
 
           $("figure").removeClass("active");
-        $(selected.elem).css("opacity", 1);
-        $(selected.elem).addClass("active");
-        var thisElementAttr = parseInt($(selected.elem).attr("data-option"));
-        $("#first").find(`[data-slick-index='${thisElementAttr}']`).addClass("slick-current slick-active");
+          $(selected.elem).addClass("active");
+          var thisElementAttr;
+        setTimeout(function(){
+          thisElementAttr = parseInt($("figure.active").attr("data-option"));
           $('.sl_1').slick('slickGoTo', thisElementAttr);
+        }, 200);
+
+          $(selected.elem).css("opacity", 1);
+
+
+        $("select option").removeAttr("selected");
+        $('select option[value="' + thisElementAttr + '"]').attr('selected','selected');
 
 
         $("figure:not(.a" + (selected.angle*100) + ", .hidden)", drum).css("opacity", "0.5");
@@ -571,4 +581,5 @@ $(".ss").mask("380-99-999-9999");
 
 })(jQuery);
 
-$("select").drum();
+$("#selectTest").drum();
+
