@@ -286,6 +286,8 @@ $(".ss").mask("380-99-999-9999");
     };
   })();
 
+  var thisIndexSet = 0;
+
   var PanelModel = function (index, data_index, settings)
   {
     this.index = index;
@@ -301,8 +303,64 @@ $(".ss").mask("380-99-999-9999");
       this.angle = settings.theta * index;
       this.elem = document.createElement('figure');
       $(this.elem).addClass('a' + this.angle*100);
-      $(this.elem).addClass('a' + this.index);
-      $(this.elem).attr('data-option' , this.index);
+
+      $(this.elem).attr('data-option' , thisIndexSet);
+
+      if (thisIndexSet==4) {
+          thisIndexSet = 0;
+      }
+      else {
+          thisIndexSet++;
+      }
+
+      // switch(this.index) {
+      //     case 0:
+      //         $(this.elem).attr('data-option' , 0);
+      //         break;
+      //     case 1:
+      //         $(this.elem).attr('data-option' , 1);
+      //         break;
+      //     case 2:
+      //         $(this.elem).attr('data-option' , 2);
+      //         break;
+      //     case 3:
+      //         $(this.elem).attr('data-option' , 3);
+      //         break;
+      //     case 4:
+      //         $(this.elem).attr('data-option' , 4);
+      //         break;
+      //     case 5:
+      //         $(this.elem).attr('data-option' , 0);
+      //         break;
+      //     case 6:
+      //         $(this.elem).attr('data-option' , 1);
+      //         break;
+      //     case 7:
+      //         $(this.elem).attr('data-option' , 2);
+      //         break;
+      //     case 8:
+      //         $(this.elem).attr('data-option' , 3);
+      //         break;
+      //     case 9:
+      //         $(this.elem).attr('data-option' , 4);
+      //         break;
+      //     case 10:
+      //         $(this.elem).attr('data-option' , 0);
+      //         break;
+      //     case 11:
+      //         $(this.elem).attr('data-option' , 1);
+      //         break;
+      //     case 12:
+      //         $(this.elem).attr('data-option' , 2);
+      //         break;
+      //     case 13:
+      //         $(this.elem).attr('data-option' , 3);
+      //         break;
+      //     case 14:
+      //         $(this.elem).attr('data-option' , 4);
+      //         break;
+      // }
+
 
       $(this.elem).css('opacity', '0.5');
 
@@ -328,7 +386,7 @@ $(".ss").mask("380-99-999-9999");
     var HTMLselect = ($(element))[0];
     var obj = this;
     var settings = $.extend({
-      panelCount : 16,
+      panelCount : 15,
       rotateFn : 'rotateX',
       interactive: true,
       dail_w: 20,
@@ -466,7 +524,7 @@ $(".ss").mask("380-99-999-9999");
         setTimeout(function(){
           thisElementAttr = parseInt($("figure.active").attr("data-option"));
           $('.sl_1').slick('slickGoTo', thisElementAttr);
-        }, 200);
+        }, 400);
 
           $(selected.elem).css("opacity", 1);
 
@@ -582,4 +640,3 @@ $(".ss").mask("380-99-999-9999");
 })(jQuery);
 
 $("#selectTest").drum();
-
