@@ -115,10 +115,7 @@ $oldcena = floor(($newcena / (100 - $skidka)) * 100); // Считаем цену
 					<p class="btn">Цена <span>899</span> грн</p>
 				</div>
 			</div>
-			<div class="arrow-sl-wr">
-				<div class="arrow-sl   arrow-sl_left arrow-sl_left_1"><img src="img/arrow_sl.svg" alt=""/></div>
-				<div class="arrow-sl   arrow-sl_right arrow-sl_right_1"><img src="img/arrow_sl.svg" alt=""/></div>
-			</div>
+
 		</div>
 	</div>
 	<div class="unit unit_form">

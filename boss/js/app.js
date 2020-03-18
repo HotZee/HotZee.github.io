@@ -1,9 +1,9 @@
 $('.sl_1').slick({
   infinite: true,
-  dots: true,
+  dots: false,
   prevArrow: $('.arrow-sl_left_1'),
   nextArrow: $('.arrow-sl_right_1'),
-  arrows: true,
+  arrows: false,
   autoplay: false
   // autoplaySpeed: 3000
   // adaptiveHeight: true,
