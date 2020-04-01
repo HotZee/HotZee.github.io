@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Contacts</title>
+
+    <link href="assets/fonts/stylesheet.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-container align-items-center">
+        <nav>
+            <ul class="header-content">
+                <li><a href="#"><img src="assets/images/logo.png" alt="png"></a></li>
+                <li><a href="#">CRM</a></li>
+                <li><a href="#">Loyalty</a></li>
+                <li><a href="#">Engagement</a></li>
+                <li><a href="#">Data&Analytics</a></li>
+            </ul>
+        </nav>
+        <div class="header-rightside">
+            <ul class="header-content-right header-content">
+                <li><img src="assets/images/bell.svg" alt="svg"><a href="#">Уведомления</a></li>
+                <li><img src="assets/images/settings.svg" alt="svg"><a href="#">Настройки</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class="section-gray mt-80 pb-80">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ul class="crumb">
+                <li><a href="#"><i class="fa fa-home"></i> Главная</a></li>&nbsp; &#8212; &nbsp;
+                <li><a href="#"> CRM</a></li>&nbsp; &#8212; &nbsp;
+                <li class="active"> Анкеты клиентов</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="sidebar-wrapper">
+                    <div class="sidebar">
+                        <div class="sidebar-title">
+                            <h1>CRM</h1>
+                        </div>
+                        <div class="sidebar-list">
+                            <ul>
+                                <li class="active"><img src="assets/images/sidebar/1.svg" alt="svg"><a href="#">Анкеты клиентов</a> <img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-black.svg" alt="svg"></li>
+                                <li><img src="assets/images/sidebar/2.svg" alt="svg"><a href="#">Метки</a><img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-gray.svg"></li>
+                                <li><img src="assets/images/sidebar/3.svg" alt="svg"><a href="#">Сегментация</a><img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-gray.svg"></li>
+                                <li><img src="assets/images/sidebar/4.svg" alt="svg"><a href="#">Комментарии</a><img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-gray.svg"></li>
+                                <li><img src="assets/images/sidebar/5.svg" alt="svg"><a href="#">Продажи</a><img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-gray.svg"></li>
+                                <li><img src="assets/images/sidebar/6.svg" alt="svg"><a href="#">Триггеры</a><img class="sidebar-arrow-image" src="assets/images/sidebar/arrow-gray.svg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-button">
+                        <a href="#">Loyalty <img src="assets/images/sidebar/arrow-pink.svg" alt="svg"></a>
+                    </div>
+                    <div class="sidebar-button">
+                        <a href="#">Engagment <img src="assets/images/sidebar/arrow-pink.svg" alt="svg"></a>
+                    </div>
+                    <div class="sidebar-button disabled">
+                        <a href="#">Data & Analitics <img src="assets/images/sidebar/locker.svg" alt="svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 offset-lg-3">
+                <div class="inventory-top-area">
+                    <div class="add-client">
+                        <a href="#"><img src="assets/images/inventory/add-client.svg" alt="svg"> Добавить клиента</a>
+                    </div>
+                    <div class="filter">
+                        <a href="#">Сначала новые</a>
+                    </div>
+                    <div class="search-area">
+                        <form action="#">
+                            <input id="search-fild" type="text" placeholder="Поиск">
+                            <label for="search-fild">
+                                <button type="submit"></button>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+                <div class="inventory">
+                    <table>
+                        <tr class="head">
+                            <th>Clients</th>
+                            <th>Added</th>
+                            <th>Last activity</th>
+                            <th>Contacts</th>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity green">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+                        <tr class="spacer"></tr>
+                        <tr class="client-card">
+                            <td class="client-info"><img src="assets/images/inventory/profile-photo.jpg" alt="clients-photo">Jana Müller</td>
+                            <td class="added">2019, sept. 15</td>
+                            <td class="last-activity red">This month</td>
+                            <td class="contacts">
+                                <span>
+                                    <a href="#"><img src="assets/images/inventory/phone.svg" alt="phone">+7-967-121-11-23</a>
+                                    <button><a href="#">...</a></button>
+                                </span>
+                                <a href="#"><img class="arrow-image" src="assets/images/sidebar/arrow-black.svg"></a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</html>
